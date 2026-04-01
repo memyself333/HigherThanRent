@@ -4,14 +4,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [Header("Persistent Objes")]
+    [Header("Persistent Objects")]
     public GameObject[] persistentObjects;
 
     private void Awake()
     {
         if (instance != null)
         {
-            Destroy(gameObject);
+            CleanUpAndDestroy();
             return;
         }
 
@@ -35,4 +35,12 @@ public class GameManager : MonoBehaviour
 
     }
 
+    private void CleanUpAndDestroy()
+        {
+        foreach (GameObject obj in persistentObjects)
+        {
+           Destroy(obj);
+        }
+        Destroy(gameObject);
+    }
 }
