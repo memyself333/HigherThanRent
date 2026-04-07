@@ -292,6 +292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565565c6b22ba324d80b2db237a7ddc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneChanger
-  sceneToLoad: 
+  sceneToLoad: Hallway
   fadeAnim: {fileID: 2486169383148450828}
-  fadeTime: 1
+  fadeTime: 0.3

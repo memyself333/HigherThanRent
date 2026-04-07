@@ -498,10 +498,6 @@ PrefabInstance:
       propertyPath: m_Offset.x
       value: 5.4753237
       objectReference: {fileID: 0}
-    - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
-      propertyPath: sceneToLoad
-      value: Hallway
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
