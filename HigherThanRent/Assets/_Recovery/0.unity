@@ -3537,7 +3537,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: persistentObjects.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: 'persistentObjects.Array.data[0]'
@@ -3547,10 +3547,6 @@ PrefabInstance:
       propertyPath: 'persistentObjects.Array.data[1]'
       value: 
       objectReference: {fileID: 1330046647}
-    - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
-      propertyPath: 'persistentObjects.Array.data[2]'
-      value: 
-      objectReference: {fileID: 1207059793}
     - target: {fileID: 3894600863851649858, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1781
@@ -3702,8 +3698,8 @@ SceneRoots:
   - {fileID: 1968061412}
   - {fileID: 1330046646}
   - {fileID: 1958288537}
-  - {fileID: 1207059795}
   - {fileID: 689473101}
   - {fileID: 294633971}
   - {fileID: 715594438}
   - {fileID: 1011906278}
+  - {fileID: 1207059795}
