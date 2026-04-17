@@ -1,19 +1,46 @@
 fileFormatVersion: 2
-guid: 67bce7798501fa84db571b667e1ef10a
+guid: 323fd13f5a965434a891c65a23241f4b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8537651536920830917
-    second: TileMap_0
+      213: 2378559503678182076
+    second: FoxSpriteP_0
   - first:
-      213: 2097702617349663825
-    second: TileMap_1
+      213: -5490121288122855788
+    second: FoxSpriteP_1
   - first:
-      213: 4957045185305522080
-    second: TileMap_2
+      213: -5093383146789943736
+    second: FoxSpriteP_2
   - first:
-      213: -5641712530122005352
-    second: TileMap_3
+      213: -570959319201323537
+    second: FoxSpriteP_3
+  - first:
+      213: 6472634677956914920
+    second: FoxSpriteP_4
+  - first:
+      213: 1783606899745572648
+    second: FoxSpriteP_5
+  - first:
+      213: 7510711112989256774
+    second: FoxSpriteP_6
+  - first:
+      213: -553458428186421230
+    second: FoxSpriteP_7
+  - first:
+      213: -5206973179490800924
+    second: FoxSpriteP_8
+  - first:
+      213: 6375193125930323821
+    second: FoxSpriteP_9
+  - first:
+      213: -2907155995465731111
+    second: FoxSpriteP_10
+  - first:
+      213: 4889782712718412497
+    second: FoxSpriteP_11
+  - first:
+      213: -1776493526504301722
+    second: FoxSpriteP_12
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TileMap_0
+      name: FoxSpriteP_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
-        width: 16
-        height: 16
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,42 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c3eb32a6d4db7670800000000000000
-      internalID: 8537651536920830917
+      spriteID: cb21ed53447520120800000000000000
+      internalID: 2378559503678182076
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 15ca8879a698c1d10800000000000000
-      internalID: 2097702617349663825
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_2
+      name: FoxSpriteP_1
       rect:
         serializedVersion: 2
         x: 32
-        y: 64
-        width: 16
-        height: 16
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,294 +173,250 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0af22bd1556fac440800000000000000
-      internalID: 4957045185305522080
+      spriteID: 49e80afb6cb2fc3b0800000000000000
+      internalID: -5490121288122855788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 894253d485c94b1b0800000000000000
-      internalID: -5641712530122005352
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 60bcc11f53755bf4bbd9103ed9fa7ec9
-      internalID: 965270953
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_5
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 434052e013fc6d042b88825394421040
-      internalID: -1757903218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_6
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1843c8e2bf2e6214ea7497327cc2b61c
-      internalID: 1277659735
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_7
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 48
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50387397d6881a348b1b8f3825e73385
-      internalID: 106677606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_8
+      name: FoxSpriteP_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 48
-        width: 16
-        height: 16
+        y: 96
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 138f3252e80dd3d4cac157c97151e9e2
-      internalID: -994983128
+      spriteID: 846cf9e830ba059b0800000000000000
+      internalID: -5093383146789943736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_9
+      name: FoxSpriteP_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe56ec5368b8318f0800000000000000
+      internalID: -570959319201323537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxSpriteP_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee2f7432fa63d950800000000000000
+      internalID: 6472634677956914920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxSpriteP_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827454e7605a0c810800000000000000
+      internalID: 1783606899745572648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxSpriteP_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64cad4cb6f76b3860800000000000000
+      internalID: 7510711112989256774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxSpriteP_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 218900eed78b158f0800000000000000
+      internalID: -553458428186421230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxSpriteP_8
       rect:
         serializedVersion: 2
         x: 0
         y: 32
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 89689aac5ebf785419236f333f5ceb2d
-      internalID: -514639493
+      spriteID: 4eae6712b7d1db7b0800000000000000
+      internalID: -5206973179490800924
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_10
+      name: FoxSpriteP_9
       rect:
         serializedVersion: 2
         x: 32
         y: 32
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b61798ee6048d024eba71372ecc9e100
-      internalID: -751867487
+      spriteID: d6fc69dee5c397850800000000000000
+      internalID: 6375193125930323821
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_11
+      name: FoxSpriteP_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 64
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c2cdfe48a7a5c7d4b9f88ac6c083c700
-      internalID: -364472931
+      spriteID: 9d33e9f5605b7a7d0800000000000000
+      internalID: -2907155995465731111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_12
+      name: FoxSpriteP_11
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
+        x: 96
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 89e6c5b8953fb9047b031ceb86e28720
-      internalID: 1482524666
+      spriteID: 1da4d64587ffbd340800000000000000
+      internalID: 4889782712718412497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMap_13
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a88ad7a1694737548a96a70db00a3afd
-      internalID: -993756617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_14
+      name: FoxSpriteP_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4a66ff64f05ca424db4d856ebe9c1808
-      internalID: -625446703
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap_15
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 29aa87bc065cdd841bfc7c75770014c6
-      internalID: -2112960928
+      spriteID: 66b1ee6cc80a857e0800000000000000
+      internalID: -1776493526504301722
       vertices: []
       indices: 
       edges: []
@@ -464,7 +425,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3dccb23871dc10b44a7aec21d3304552
+    spriteID: 1f49e4fdc93ae74469f0eac82e8d669d
     internalID: 0
     vertices: []
     indices: 
@@ -474,24 +435,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      TileMap_0: 8537651536920830917
-      TileMap_1: 2097702617349663825
-      TileMap_10: -751867487
-      TileMap_11: -364472931
-      TileMap_12: 1482524666
-      TileMap_13: -993756617
-      TileMap_14: -625446703
-      TileMap_15: -2112960928
-      TileMap_2: 4957045185305522080
-      TileMap_3: -5641712530122005352
-      TileMap_4: 965270953
-      TileMap_5: -1757903218
-      TileMap_6: 1277659735
-      TileMap_7: 106677606
-      TileMap_8: -994983128
-      TileMap_9: -514639493
+      FoxSpriteP_0: 2378559503678182076
+      FoxSpriteP_1: -5490121288122855788
+      FoxSpriteP_10: -2907155995465731111
+      FoxSpriteP_11: 4889782712718412497
+      FoxSpriteP_12: -1776493526504301722
+      FoxSpriteP_2: -5093383146789943736
+      FoxSpriteP_3: -570959319201323537
+      FoxSpriteP_4: 6472634677956914920
+      FoxSpriteP_5: 1783606899745572648
+      FoxSpriteP_6: 7510711112989256774
+      FoxSpriteP_7: -553458428186421230
+      FoxSpriteP_8: -5206973179490800924
+      FoxSpriteP_9: 6375193125930323821
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
