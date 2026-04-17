@@ -23,6 +23,8 @@ public class EnemyAI : MonoBehaviour
     {
         EnemyCurrentHealth -= damage;
 
+        //Hurt Animation goes here!!
+
         if (EnemyCurrentHealth <= 0)
         {
             Die();
