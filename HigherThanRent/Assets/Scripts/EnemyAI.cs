@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
     {
         EnemyCurrentHealth -= damage;
 
-        //Hurt Animation goes here!!
+        //Hurt Animation goes here!
 
         if (EnemyCurrentHealth <= 0)
         {
