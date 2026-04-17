@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: persistentObjects.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: 'persistentObjects.Array.data[0]'
@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: 'persistentObjects.Array.data[1]'
       value: 
       objectReference: {fileID: 910894939}
+    - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
+      propertyPath: 'persistentObjects.Array.data[2]'
+      value: 
+      objectReference: {fileID: 628977155}
     - target: {fileID: 3894600863851649858, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1781
@@ -305,6 +309,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &628977155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6714308342216231820, guid: 730a5b448aaf0e547a510b5961f25a66, type: 3}
+  m_PrefabInstance: {fileID: 2111371848144819461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &680064920 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2900167574691834481, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
@@ -559,6 +568,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 707012084781030994, guid: 730a5b448aaf0e547a510b5961f25a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 680064923}
+    - target: {fileID: 2618047886207611597, guid: 730a5b448aaf0e547a510b5961f25a66, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 680064923}
     - target: {fileID: 6714308342216231820, guid: 730a5b448aaf0e547a510b5961f25a66, type: 3}
       propertyPath: m_Name
       value: Buttons
@@ -5235,9 +5252,9 @@ SceneRoots:
   - {fileID: 79656282}
   - {fileID: 3688215916937358592}
   - {fileID: 7781542753172243815}
+  - {fileID: 2111371848144819461}
   - {fileID: 274984799}
   - {fileID: 1524062130992473252}
   - {fileID: 8767392255578620362}
   - {fileID: 155183703}
   - {fileID: 1609820399}
-  - {fileID: 2111371848144819461}
