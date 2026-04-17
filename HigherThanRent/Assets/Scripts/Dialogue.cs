@@ -18,7 +18,7 @@ public class Dialogue : MonoBehaviour
     void Start()
     {
         textComponent.text = String.Empty;
-        StartDialogue();
+        gameObject.SetActive(false); // Just hiding the dialogue thing until I attach it to NPCs
     }
 
     // Update is called once per frame
