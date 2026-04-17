@@ -10,20 +10,20 @@ public class EnemyAI : MonoBehaviour
     public float distanceBetween;
 
     //Combat
-    public int maxHealth = 3;
-    int currentHealth;
+    public int EnemyMaxHealth = 3;
+    int EnemyCurrentHealth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        currentHealth = maxHealth;
+        EnemyCurrentHealth = EnemyMaxHealth;
     }
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        EnemyCurrentHealth -= damage;
 
-        if (currentHealth <= 0)
+        if (EnemyCurrentHealth <= 0)
         {
             Die();
         }

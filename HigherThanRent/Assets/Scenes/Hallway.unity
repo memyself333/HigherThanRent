@@ -3403,7 +3403,7 @@ MonoBehaviour:
   Player: {fileID: 1968061414}
   speed: 1
   distanceBetween: 3.5
-  maxHealth: 3
+  EnemyMaxHealth: 3
 --- !u!1001 &1330046646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3462,7 +3462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3886272926074302231, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.85542
+      value: 5.6554203
       objectReference: {fileID: 0}
     - target: {fileID: 3886272926074302231, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3602,7 +3602,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5876633855082192454, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5
+      value: 6.3
       objectReference: {fileID: 0}
     - target: {fileID: 5876633855082192454, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_LocalPosition.y

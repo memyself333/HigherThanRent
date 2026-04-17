@@ -41,13 +41,4 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<EnemyAI>().TakeDamage(attackDamage);
         }
     }
-
-    //View attack Range in unity editor
-    void onDrawGizmosSelected()
-    {
-        if (attackPoint == null)
-            return;
-
-        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-    }
 }
