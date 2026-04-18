@@ -295,3 +295,4 @@ MonoBehaviour:
   sceneToLoad: Hallway
   fadeAnim: {fileID: 2486169383148450828}
   fadeTime: 0.3
+  newPlayerPosition: {x: 0, y: 0}
