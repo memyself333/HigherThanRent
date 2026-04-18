@@ -13,6 +13,10 @@ public class EnemyAI : MonoBehaviour
     public int EnemyMaxHealth = 3;
     int EnemyCurrentHealth;
 
+    float nextEnemyAttackTime = 1f;
+    public float enemyAttackRate = 2f;
+    public float enemyAttackDamage = 0.5f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -43,6 +47,7 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Move enemy towards player
         distance = Vector2.Distance(transform.position, Player.transform.position);
 
         if (distance < distanceBetween)
@@ -50,11 +55,17 @@ public class EnemyAI : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
         }
 
-        /*if (distanceBetween < 1)
+        //Enemy Attack 
+        /*if (Time.time >= nextEnemyAttackTime)
         {
-            remove 1 hp from player (need to establish hp for player in another script assigned to player - must be public)
-            give time until enemy can attack again
-        }
-        */
+            if (distanceBetween < 1)
+            {
+                //Play attack animtion
+
+                //player must take damage (enemy attack) (playerTakeDamage)
+
+                nextEnemyAttackTime = Time.time + 1f / enemyAttackRate;
+            }
+        }*/
     }
 }
