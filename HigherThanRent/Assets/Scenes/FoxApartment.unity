@@ -366,6 +366,37 @@ MonoBehaviour:
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
+--- !u!1 &1486712955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1486712956}
+  m_Layer: 10
+  m_Name: EnemyAttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1486712956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1486712955}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.20901997, y: -0.27291045, z: 0}
+  m_LocalScale: {x: 1.0521771, y: 1.0553436, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1761934995}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609820396
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +543,13 @@ MonoBehaviour:
   speed: 2
   distanceBetween: 4
   EnemyMaxHealth: 3
+  enemyAttackRange: 0.5
   enemyAttackRate: 2
-  enemyAttackDamage: 0.5
+  enemyAttackDamage: 1
+  enemyAttackPoint: {fileID: 1486712956}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!61 &1761934992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -658,7 +694,8 @@ Transform:
   m_LocalPosition: {x: -16.5123, y: 44.5174, z: 0}
   m_LocalScale: {x: 0.1377905, y: 0.13776554, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1486712956}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1938717831 stripped
@@ -940,9 +977,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6279996749807775900, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_TagString

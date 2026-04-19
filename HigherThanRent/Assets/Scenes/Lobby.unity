@@ -220,6 +220,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
+--- !u!1 &434276217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434276218}
+  m_Layer: 10
+  m_Name: EnemyAttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434276218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434276217}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.11642229, y: -0.025361761, z: 0}
+  m_LocalScale: {x: 0.9986916, y: 0.99651104, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2021076779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &539563556
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6572,9 +6603,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6279996749807775900, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_TagString
@@ -6773,8 +6812,13 @@ MonoBehaviour:
   speed: 2
   distanceBetween: 4
   EnemyMaxHealth: 3
+  enemyAttackRange: 0.5
   enemyAttackRate: 2
-  enemyAttackDamage: 0.5
+  enemyAttackDamage: 1
+  enemyAttackPoint: {fileID: 434276218}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!61 &2021076776
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6919,7 +6963,8 @@ Transform:
   m_LocalPosition: {x: -16.5004, y: 44.4835, z: 0}
   m_LocalScale: {x: 0.14516993, y: 0.14589901, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 434276218}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
@@ -6930,9 +6975,9 @@ SceneRoots:
   - {fileID: 1150985405}
   - {fileID: 1793377517}
   - {fileID: 1838946796}
+  - {fileID: 2021076779}
   - {fileID: 1625647345}
   - {fileID: 539563556}
   - {fileID: 177502077}
   - {fileID: 737580675}
   - {fileID: 745144894}
-  - {fileID: 2021076779}
