@@ -11,7 +11,6 @@ public class Dialogue : MonoBehaviour
     public string[] lines; // The actual lines/script we'll use
     // If you change 'size' in the serialized field in Unity, you can add each dialogue line as an element
     public float textSpeed; // Speed of the lines
-
     private int index; // Position within the conversation
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
