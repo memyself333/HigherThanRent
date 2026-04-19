@@ -9,7 +9,7 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
 
     //Attacks
-    public float attackRange = 1f;
+    public float attackRange = 2f;
     public int attackDamage = 1;
 
     //How many times you can attack per second
@@ -46,11 +46,11 @@ public class PlayerCombat : MonoBehaviour
         //Damage Enemies
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyAI>().TakeDamage(attackDamage);
+            enemy.GetComponent<EnemyAI>().EnemyTakeDamage(attackDamage);
         }
     }
 
-    /*public void PlayerTakeDamage(int damage)
+    public void PlayerTakeDamage(int damage)
     {
         playerCurrentHealth -= damage;
 
@@ -65,8 +65,8 @@ public class PlayerCombat : MonoBehaviour
     public void PlayerDeath()
     {
         //Reset player to last save state
-    
+
         //Reset Player Health
-        playerCurrentHealth = playerMaxHealth
-    }*/
+        playerCurrentHealth = playerMaxHealth;
+    }
 }

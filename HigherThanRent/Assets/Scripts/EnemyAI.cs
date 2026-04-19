@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -13,9 +14,15 @@ public class EnemyAI : MonoBehaviour
     public int EnemyMaxHealth = 3;
     int EnemyCurrentHealth;
 
-    float nextEnemyAttackTime = 1f;
-    public float enemyAttackRate = 2f;
-    public float enemyAttackDamage = 0.5f;
+    float nextEnemyAttackTime = 0f;
+    public float enemyAttackRange = 0.5f; 
+    public float enemyAttackRate = 5f;
+    public int enemyAttackDamage = 1;
+
+    public Transform enemyAttackPoint;
+
+    //Defines which objects is the player, only attacks objects detected in this layer 
+    public LayerMask playerLayer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +30,7 @@ public class EnemyAI : MonoBehaviour
         EnemyCurrentHealth = EnemyMaxHealth;
     }
 
-    public void TakeDamage(int damage)
+    public void EnemyTakeDamage(int damage)
     {
         EnemyCurrentHealth -= damage;
 
@@ -55,17 +62,28 @@ public class EnemyAI : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
         }
 
-        //Enemy Attack 
-        /*if (Time.time >= nextEnemyAttackTime)
+        if (Time.time >= nextEnemyAttackTime)
         {
-            if (distanceBetween < 1)
+            if (distance <= 1)
             {
-                //Play attack animtion
-
-                //player must take damage (enemy attack) (playerTakeDamage)
-
-                nextEnemyAttackTime = Time.time + 1f / enemyAttackRate;
+                EnemyAttack();
+                nextEnemyAttackTime = Time.time + 5f / enemyAttackRate;
             }
-        }*/
+        }
     }
+
+     public void EnemyAttack()
+     {
+        //Enemy Attack Animation
+
+        //Detect if player is in range
+        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(enemyAttackPoint.position, enemyAttackRange, playerLayer);
+
+        //Damage Enemies
+        foreach (Collider2D player in hitPlayer)
+        {
+            player.GetComponent<PlayerCombat>().PlayerTakeDamage(enemyAttackDamage);
+        }
+     }
 }
+
