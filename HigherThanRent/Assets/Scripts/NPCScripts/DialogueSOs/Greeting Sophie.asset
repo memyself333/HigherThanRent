@@ -20,4 +20,4 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
     text: I just can't catch a break with you around, can I?
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
-    text: Alright, listen up then-
+    text: 'Alright, listen up then- [PLACEHOLDER YAP]'
