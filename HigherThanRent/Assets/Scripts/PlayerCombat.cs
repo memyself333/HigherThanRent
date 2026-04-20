@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -19,9 +20,15 @@ public class PlayerCombat : MonoBehaviour
     //Defines which objects are enemies, only attacks objects detected in this layer 
     public LayerMask enemyLayers;
 
+    //Health Bar
+    public Slider healthSlider;
+
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
+
+        healthSlider.maxValue = playerMaxHealth;
+        healthSlider.value = playerCurrentHealth;
     }
 
     // Update is called once per frame
@@ -53,6 +60,7 @@ public class PlayerCombat : MonoBehaviour
     public void PlayerTakeDamage(int damage)
     {
         playerCurrentHealth -= damage;
+        healthSlider.value = playerCurrentHealth;
 
         //Hurt Animation goes here!
 
