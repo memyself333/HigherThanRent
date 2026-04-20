@@ -1,0 +1,8 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "ActorSO", menuName = "Dialogue/NPC")] // Any "SO" in file names is for ScriptableObject
+public class ActorSO : ScriptableObject
+{
+   public string actorName;
+   public Sprite portrait;
+}
