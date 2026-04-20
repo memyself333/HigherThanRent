@@ -493,10 +493,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffcfb98b372e04442bf4908d52d532d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  canvasGroup: {fileID: 846187283}
   portrait: {fileID: 1159832013}
   actorName: {fileID: 401579455}
   dialogueText: {fileID: 700716080}
   isDialogueActive: 0
+--- !u!225 &846187283 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 1453956833819035202, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+  m_PrefabInstance: {fileID: 2902876158442378323}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &910894939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7816113090132915179, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
