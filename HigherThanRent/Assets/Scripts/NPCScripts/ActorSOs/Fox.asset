@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Fox
   m_EditorClassIdentifier: Assembly-CSharp::ActorSO
   actorName: Fox
-  portrait: {fileID: -2844736123295044442, guid: f039a2130cdcef846845810b9b821dd8, type: 3}
+  portrait: {fileID: -7277091322525844872, guid: a0c39a57d2d0945489c771e29bbb1bad, type: 3}

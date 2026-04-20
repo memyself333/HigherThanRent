@@ -766,6 +766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCTalk
   interactAnim: {fileID: 474959253}
   dialogueSO: {fileID: 11400000, guid: 138e6fb629a5b614b8ef2544669dd073, type: 2}
+  saveButton: {fileID: 1947824093}
 --- !u!114 &1390556065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1320,6 +1321,11 @@ Animator:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2072721095455021059, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
   m_PrefabInstance: {fileID: 3688215916937358592}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1947824093 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2115486032707343153, guid: 730a5b448aaf0e547a510b5961f25a66, type: 3}
+  m_PrefabInstance: {fileID: 2111371848144819461}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1524062130992473252
 PrefabInstance:
