@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 916169549714742630}
   m_Layer: 0
   m_Name: SaveLoader
-  m_TagString: Untagged
+  m_TagString: SaveLoader
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d744339b289759042b7b6491a112118c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SaveController
+  saveButton: {fileID: 0}
