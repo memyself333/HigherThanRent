@@ -19,6 +19,9 @@ public class PlayerCombat : MonoBehaviour
     //Defines which objects are enemies, only attacks objects detected in this layer 
     public LayerMask enemyLayers;
 
+    //Applies animator to player, used for attack and hurt animations
+    public Animator anim;
+
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
@@ -39,7 +42,8 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         //Attack Aimation Goes Here!!
-        
+        anim.Play("Attack");
+
         //Detect Enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
@@ -48,6 +52,9 @@ public class PlayerCombat : MonoBehaviour
         {
             enemy.GetComponent<EnemyAI>().EnemyTakeDamage(attackDamage);
         }
+        
+        anim.SetBool("attacking", false);
+
     }
 
     public void PlayerTakeDamage(int damage)
