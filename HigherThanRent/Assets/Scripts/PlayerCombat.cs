@@ -9,6 +9,10 @@ public class PlayerCombat : MonoBehaviour
     
     public Transform attackPoint;
 
+    //animation
+    public Animator weaponAnim;
+    public Animator playerAnim;
+
     //Attacks
     public float attackRange = 2f;
     public int attackDamage = 1;
@@ -46,7 +50,8 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         //Attack Aimation Goes Here!!
-        
+        weaponAnim.Play("Attack");
+
         //Detect Enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
@@ -55,6 +60,8 @@ public class PlayerCombat : MonoBehaviour
         {
             enemy.GetComponent<EnemyAI>().EnemyTakeDamage(attackDamage);
         }
+
+        weaponAnim.SetBool("attacking", false); 
     }
 
     public void PlayerTakeDamage(int damage)
@@ -63,11 +70,17 @@ public class PlayerCombat : MonoBehaviour
         healthSlider.value = playerCurrentHealth;
 
         //Hurt Animation goes here!
+        playerAnim.Play("PlayerHurt");
+
+
+        playerAnim.SetBool("hurt", false);
 
         if (playerCurrentHealth <= 0)
         {
             PlayerDeath();
         }
+
+        
     }
 
     public void PlayerDeath()

@@ -1,3 +1,4 @@
+using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +13,10 @@ public class NPCTalk : MonoBehaviour
 
     private void Awake()
     {
+        saveButton = GameObject.FindGameObjectWithTag("SaveButton");
         anim = GetComponentInChildren<Animator>(); // Accessing the animator, which is in a child object
+    
+        
     }
 
     private void OnEnable() // When the script is toggled on

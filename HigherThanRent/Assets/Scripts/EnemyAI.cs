@@ -7,6 +7,8 @@ public class EnemyAI : MonoBehaviour
     public GameObject Player;
     public float speed;
 
+    public Animator anim;
+
     private float distance;
     public float distanceBetween;
 
@@ -28,6 +30,7 @@ public class EnemyAI : MonoBehaviour
     void Start()
     {
         EnemyCurrentHealth = EnemyMaxHealth;
+        anim.Play("EnemyIdle");
     }
 
     public void EnemyTakeDamage(int damage)
@@ -35,20 +38,25 @@ public class EnemyAI : MonoBehaviour
         EnemyCurrentHealth -= damage;
 
         //Hurt Animation goes here!
+        anim.Play("EnemyHurt");
 
         if (EnemyCurrentHealth <= 0)
         {
             Die();
         }
+
+        anim.SetBool("hurt", false);
     }
 
     public void Die()
     {
         //Enemy Die Animation Goes Here!!
+        anim.Play("EnemyDead");
 
         //Disable the enemy 
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
+
     }
 
     // Update is called once per frame
