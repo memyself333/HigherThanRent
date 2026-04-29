@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,9 +14,10 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     public Animator borderAnim;
     public Animator dBoxAnim;
-    public Animator dialogueAnim;
+    public GameObject dialogue;
     public Animator nameAnim;
     public Animator portraitAnim;
+
 
 
     public bool isDialogueActive;
@@ -33,7 +35,6 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(gameObject); // Ensuring there is only ever ONE version of this script in the game
         }
-
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
@@ -67,21 +68,20 @@ public class DialogueManager : MonoBehaviour
         {
             borderAnim.Play("BorderToLeft");
             dBoxAnim.Play("DBoxToLeft");
-            dialogueAnim.Play("DialogueToLeft");
             nameAnim.Play("NameToLeft");
-            portraitAnim.Play("PortraitToLeft");
+            StartCoroutine(WaitForSecondsLeft());
 
         }
         else if (line.speaker.side == "Right")
         {
             borderAnim.Play("BorderToRight");
             dBoxAnim.Play("DBoxToRight");
-            dialogueAnim.Play("DialogueToRight");
             nameAnim.Play("NameToRight");
-            portraitAnim.Play("PortraitToRight");
+            StartCoroutine(WaitForSecondsRight());   
         }
 
-        portrait.sprite = line.speaker.portrait;
+
+
         actorName.text = line.speaker.actorName;
 
         dialogueText.text = line.text;
@@ -101,5 +101,32 @@ public class DialogueManager : MonoBehaviour
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
+    }
+
+
+    IEnumerator WaitForSecondsLeft()
+    {
+        DialogueLine line = currentDialogue.lines[dialogueIndex];
+
+        dialogueText.alignment = TextAlignmentOptions.Left;
+        portraitAnim.Play("PortraitToLeft");
+        yield return new WaitForSeconds(0.2f);
+        portrait.sprite = line.speaker.portrait;
+        yield return new WaitForSeconds(0.2f);
+        dialogueText.rectTransform.TransformVector(new Vector2(-140, -140));
+
+    }
+
+    IEnumerator WaitForSecondsRight()
+    {
+        DialogueLine line = currentDialogue.lines[dialogueIndex];
+
+        dialogueText.alignment = TextAlignmentOptions.Right;
+        portraitAnim.Play("PortraitToRight");
+        yield return new WaitForSeconds(0.2f);
+        portrait.sprite = line.speaker.portrait; 
+        yield return new WaitForSeconds(0.2f);
+        dialogueText.rectTransform.TransformVector(new Vector2(700, -140));
+
     }
 }
