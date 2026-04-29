@@ -11,6 +11,12 @@ public class DialogueManager : MonoBehaviour
     public Image portrait;
     public TMP_Text actorName;
     public TMP_Text dialogueText;
+    public Animator borderAnim;
+    public Animator dBoxAnim;
+    public Animator dialogueAnim;
+    public Animator nameAnim;
+    public Animator portraitAnim;
+
 
     public bool isDialogueActive;
 
@@ -56,6 +62,24 @@ public class DialogueManager : MonoBehaviour
     private void ShowDialogue() // Updating everything on the dialogue canvas
     {
         DialogueLine line = currentDialogue.lines[dialogueIndex];
+
+        if (line.speaker.side == "Left")
+        {
+            borderAnim.Play("BorderToLeft");
+            dBoxAnim.Play("DBoxToLeft");
+            dialogueAnim.Play("DialogueToLeft");
+            nameAnim.Play("NameToLeft");
+            portraitAnim.Play("PortraitToLeft");
+
+        }
+        else if (line.speaker.side == "Right")
+        {
+            borderAnim.Play("BorderToRight");
+            dBoxAnim.Play("DBoxToRight");
+            dialogueAnim.Play("DialogueToRight");
+            nameAnim.Play("NameToRight");
+            portraitAnim.Play("PortraitToRight");
+        }
 
         portrait.sprite = line.speaker.portrait;
         actorName.text = line.speaker.actorName;
