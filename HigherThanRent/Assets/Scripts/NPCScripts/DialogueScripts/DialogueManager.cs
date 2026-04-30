@@ -13,10 +13,11 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text actorName;
     public TMP_Text dialogueText;
     public Animator borderAnim;
-    public Animator dBoxAnim;
-    public GameObject dialogue;
     public Animator nameAnim;
     public Animator portraitAnim;
+    public Animator canvasAnim;
+
+
 
 
 
@@ -67,7 +68,6 @@ public class DialogueManager : MonoBehaviour
         if (line.speaker.side == "Left")
         {
             borderAnim.Play("BorderToLeft");
-            dBoxAnim.Play("DBoxToLeft");
             nameAnim.Play("NameToLeft");
             StartCoroutine(WaitForSecondsLeft());
 
@@ -75,7 +75,6 @@ public class DialogueManager : MonoBehaviour
         else if (line.speaker.side == "Right")
         {
             borderAnim.Play("BorderToRight");
-            dBoxAnim.Play("DBoxToRight");
             nameAnim.Play("NameToRight");
             StartCoroutine(WaitForSecondsRight());   
         }
@@ -86,23 +85,13 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = line.text;
 
+        canvasAnim.Play("DialogueFadeIn");
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
 
         dialogueIndex ++; // Incrementing each time a new line is shown.
     }
-
-    private void EndDialogue()
-    {
-        dialogueIndex = 0;
-        isDialogueActive = false;
-
-        canvasGroup.alpha = 0;
-        canvasGroup.interactable = false;
-        canvasGroup.blocksRaycasts = false;
-    }
-
 
     IEnumerator WaitForSecondsLeft()
     {
@@ -124,9 +113,19 @@ public class DialogueManager : MonoBehaviour
         dialogueText.alignment = TextAlignmentOptions.Right;
         portraitAnim.Play("PortraitToRight");
         yield return new WaitForSeconds(0.2f);
-        portrait.sprite = line.speaker.portrait; 
+        portrait.sprite = line.speaker.portrait;
         yield return new WaitForSeconds(0.2f);
         dialogueText.rectTransform.TransformVector(new Vector2(700, -140));
 
+    }
+    private void EndDialogue()
+    {
+        dialogueIndex = 0;
+
+        canvasAnim.Play("DialogueFadeOut");
+        canvasGroup.alpha = 0;
+        isDialogueActive = false;
+        canvasGroup.interactable = false;
+        canvasGroup.blocksRaycasts = false;
     }
 }
