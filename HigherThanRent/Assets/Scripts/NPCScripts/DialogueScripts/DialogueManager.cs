@@ -16,6 +16,7 @@ public class DialogueManager : MonoBehaviour
     public Animator nameAnim;
     public Animator portraitAnim;
     public Animator canvasAnim;
+    public Animator dialogueAnim;
 
 
 
@@ -69,14 +70,18 @@ public class DialogueManager : MonoBehaviour
         {
             borderAnim.Play("BorderToLeft");
             nameAnim.Play("NameToLeft");
+            dialogueAnim.Play("DialogueToLeft");
             StartCoroutine(WaitForSecondsLeft());
+            dialogueText.alignment = TextAlignmentOptions.TopLeft;
 
         }
         else if (line.speaker.side == "Right")
         {
             borderAnim.Play("BorderToRight");
             nameAnim.Play("NameToRight");
-            StartCoroutine(WaitForSecondsRight());   
+            dialogueAnim.Play("DialogueToRight");
+            StartCoroutine(WaitForSecondsRight());
+            dialogueText.alignment = TextAlignmentOptions.TopRight;
         }
 
 
@@ -97,12 +102,12 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueLine line = currentDialogue.lines[dialogueIndex];
 
-        dialogueText.alignment = TextAlignmentOptions.Left;
+        
         portraitAnim.Play("PortraitToLeft");
         yield return new WaitForSeconds(0.2f);
         portrait.sprite = line.speaker.portrait;
         yield return new WaitForSeconds(0.2f);
-        dialogueText.rectTransform.TransformVector(new Vector2(-140, -140));
+      
 
     }
 
@@ -110,12 +115,12 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueLine line = currentDialogue.lines[dialogueIndex];
 
-        dialogueText.alignment = TextAlignmentOptions.Right;
+
         portraitAnim.Play("PortraitToRight");
         yield return new WaitForSeconds(0.2f);
         portrait.sprite = line.speaker.portrait;
         yield return new WaitForSeconds(0.2f);
-        dialogueText.rectTransform.TransformVector(new Vector2(700, -140));
+        
 
     }
     private void EndDialogue()

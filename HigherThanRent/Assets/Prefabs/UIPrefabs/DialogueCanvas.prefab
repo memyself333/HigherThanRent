@@ -1185,8 +1185,8 @@ RectTransform:
   - {fileID: 2371981138465517822}
   - {fileID: 8000120394711223357}
   - {fileID: 7676798207588359802}
-  - {fileID: 4945407091144817737}
   - {fileID: 6700204702001374013}
+  - {fileID: 4945407091144817737}
   - {fileID: 1276069600066996122}
   - {fileID: 8431086928560967858}
   m_Father: {fileID: 0}
@@ -1288,7 +1288,6 @@ MonoBehaviour:
   actorName: {fileID: 5685911122199848611}
   dialogueText: {fileID: 7758591317568304314}
   borderAnim: {fileID: 4180342199686179733}
-  dBoxAnim: {fileID: 0}
   nameAnim: {fileID: 3197379046045200572}
   portraitAnim: {fileID: 4036331908541895565}
   canvasAnim: {fileID: 9043109810601997295}

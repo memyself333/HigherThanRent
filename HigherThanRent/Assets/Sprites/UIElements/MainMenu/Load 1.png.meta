@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 90692550c29017d48a27c998027414f1
+guid: bc58d64c79ba37d4f98852f218e94a0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6014160727878086526
-    second: Quit 1_0
+      213: 3995184351926809685
+    second: Load 1_0
+  - first:
+      213: -7362301692554882054
+    second: Load 1_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -24,7 +27,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -48,7 +51,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -100,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Quit 1_0
+      name: Load 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +118,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7f274f4157967350800000000000000
-      internalID: 6014160727878086526
+      spriteID: 554fbcc200fb17730800000000000000
+      internalID: 3995184351926809685
       vertices: []
       indices: 
       edges: []
@@ -125,7 +128,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 98c93b662fd859b48a613071a0eb41dd
+    spriteID: 28a84e4496daca04f95d9c5789fcc31e
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +140,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":190.0,"y":108.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Quit 1_0: 6014160727878086526
+      Load 1_0: 3995184351926809685
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
