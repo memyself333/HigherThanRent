@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
 {
@@ -8,8 +9,12 @@ public class PlayerCombat : MonoBehaviour
     
     public Transform attackPoint;
 
+    //animation
+    public Animator weaponAnim;
+    public Animator playerAnim;
+
     //Attacks
-    public float attackRange = 1f;
+    public float attackRange = 2f;
     public int attackDamage = 1;
 
     //How many times you can attack per second
@@ -19,9 +24,15 @@ public class PlayerCombat : MonoBehaviour
     //Defines which objects are enemies, only attacks objects detected in this layer 
     public LayerMask enemyLayers;
 
+    //Health Bar
+    public Slider healthSlider;
+
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
+
+        healthSlider.maxValue = playerMaxHealth;
+        healthSlider.value = playerCurrentHealth;
     }
 
     // Update is called once per frame
@@ -39,34 +50,44 @@ public class PlayerCombat : MonoBehaviour
     void Attack()
     {
         //Attack Aimation Goes Here!!
-        
+        weaponAnim.Play("Attack");
+
         //Detect Enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
         //Damage Enemies
         foreach (Collider2D enemy in hitEnemies)
         {
-            enemy.GetComponent<EnemyAI>().TakeDamage(attackDamage);
+            enemy.GetComponent<EnemyAI>().EnemyTakeDamage(attackDamage);
         }
+
+        weaponAnim.SetBool("attacking", false); 
     }
 
-    /*public void PlayerTakeDamage(int damage)
+    public void PlayerTakeDamage(int damage)
     {
         playerCurrentHealth -= damage;
+        healthSlider.value = playerCurrentHealth;
 
         //Hurt Animation goes here!
+        playerAnim.Play("PlayerHurt");
+
+
+        playerAnim.SetBool("hurt", false);
 
         if (playerCurrentHealth <= 0)
         {
             PlayerDeath();
         }
+
+        
     }
 
     public void PlayerDeath()
     {
         //Reset player to last save state
-    
+
         //Reset Player Health
-        playerCurrentHealth = playerMaxHealth
-    }*/
+        playerCurrentHealth = playerMaxHealth;
+    }
 }

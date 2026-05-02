@@ -4436,12 +4436,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ba6f4493d15b24b9c3c9e4e78c9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
-  Player: {fileID: 0}
+  Player: {fileID: 1968061414}
   speed: 2
   distanceBetween: 4
   EnemyMaxHealth: 3
+  enemyAttackRange: 0.5
   enemyAttackRate: 2
-  enemyAttackDamage: 0.5
+  enemyAttackDamage: 1
+  enemyAttackPoint: {fileID: 1522707271}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!61 &978262521
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4586,7 +4591,8 @@ Transform:
   m_LocalPosition: {x: -16.4978, y: 44.496, z: 0}
   m_LocalScale: {x: 0.1435, y: 0.1417, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1522707271}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011906276
@@ -4865,6 +4871,37 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!1 &1522707270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522707271}
+  m_Layer: 10
+  m_Name: EnemyAttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522707271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522707270}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.09966062, y: -0.11430631, z: 0}
+  m_LocalScale: {x: 1.0103135, y: 1.0260408, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 978262524}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1958288537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4986,9 +5023,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6279996749807775900, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_TagString
@@ -5046,10 +5091,10 @@ SceneRoots:
   - {fileID: 1958288537}
   - {fileID: 1968061412}
   - {fileID: 1330046646}
+  - {fileID: 978262524}
   - {fileID: 689473101}
   - {fileID: 294633971}
   - {fileID: 121192168}
   - {fileID: 715594438}
   - {fileID: 1011906278}
   - {fileID: 1107361674}
-  - {fileID: 978262524}
