@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -93,5 +95,6 @@ public class EnemyAI : MonoBehaviour
             player.GetComponent<PlayerCombat>().PlayerTakeDamage(enemyAttackDamage);
         }
      }
+
 }
 
