@@ -6,8 +6,10 @@ public class PlayerMovement : MonoBehaviour
     public float playerSpeed = 5f;
     public Rigidbody2D rb;
     public Animator anim;
+    public GameObject pauseMenu;
 
-    
+
+
     void FixedUpdate()
     {
         //Get horizontal and vertical inputs from player, assign them to variables which will either equal 1, 0,or -1
@@ -16,9 +18,10 @@ public class PlayerMovement : MonoBehaviour
 
         //Set paramaters in animator to match horizontal and vertical inputs
         anim.SetFloat("horizontal", horizontal);
-        anim.SetFloat("vertical", vertical); 
-        
+        anim.SetFloat("vertical", vertical);
+
         // Set player velocity based on horizsontal and vertical variables, multplied by the playerSpeed set in the inspector
         rb.linearVelocity = new Vector2(horizontal * playerSpeed, vertical * playerSpeed);
+
     }
 }

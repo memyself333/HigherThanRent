@@ -1,3 +1,4 @@
+using UnityEditor.Overlays;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -9,8 +10,9 @@ public class MainMenu : MonoBehaviour
     public Image startButton;
     public Image loadButton;
     public Image quitButton;
+    public GameObject pauseMenu;
 
-    private void Start()
+    private void Awake()
     {
         startButton.alphaHitTestMinimumThreshold = 0.1f;
         loadButton.alphaHitTestMinimumThreshold = 0.1f;
@@ -20,7 +22,9 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(gameSceneName); 
+        Time.timeScale = 1;
+        SceneManager.LoadScene(gameSceneName);
+        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(0, 0, 0);  
     }
 
     public void Quit()

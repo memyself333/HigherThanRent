@@ -1,10 +1,31 @@
 fileFormatVersion: 2
-guid: d48172d7b2e1ea345be6f57c53dec449
+guid: 97a061181008c384a9a314b098afad0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6014160727878086526
-    second: Quit 1_0
+      213: -3410515013433605667
+    second: PauseContinue 1_0
+  - first:
+      213: -3927245419940852132
+    second: PauseContinue 1_1
+  - first:
+      213: -7459214580287930462
+    second: PauseContinue 1_2
+  - first:
+      213: -1465080331175243784
+    second: PauseContinue 1_3
+  - first:
+      213: 5536100857122125191
+    second: PauseContinue 1_4
+  - first:
+      213: -8663241199283033808
+    second: PauseContinue 1_5
+  - first:
+      213: 3433414021433760156
+    second: PauseContinue 1_6
+  - first:
+      213: -2859744712622068374
+    second: PauseContinue 1_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Quit 1_0
+      name: PauseContinue 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +136,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e7f274f4157967350800000000000000
-      internalID: 6014160727878086526
+      spriteID: dd1472b3aaa6ba0d0800000000000000
+      internalID: -3410515013433605667
       vertices: []
       indices: 
       edges: []
@@ -125,7 +146,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9c3474b5c506f3f498dfa6b67350c185
+    spriteID: b2380b8851d84af48bc680a8cece7d77
     internalID: 0
     vertices: []
     indices: 
@@ -137,7 +158,7 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":190.0,"y":108.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Quit 1_0: 6014160727878086526
+      PauseContinue 1_0: -3410515013433605667
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
