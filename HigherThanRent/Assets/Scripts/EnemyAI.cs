@@ -2,12 +2,13 @@ using TMPro;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
-{
+{ 
     //Enemy AI
     public GameObject Player;
     public float speed;
 
     public Animator anim;
+    bool isMoving = false;
 
     private float distance;
     public float distanceBetween;
@@ -67,6 +68,7 @@ public class EnemyAI : MonoBehaviour
 
         if (distance < distanceBetween)
         {
+            isMoving = true; 
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
         }
 
@@ -78,6 +80,8 @@ public class EnemyAI : MonoBehaviour
                 nextEnemyAttackTime = Time.time + 5f / enemyAttackRate;
             }
         }
+
+        anim.SetBool("Move", isMoving);
     }
 
      public void EnemyAttack()
