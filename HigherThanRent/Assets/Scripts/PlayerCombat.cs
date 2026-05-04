@@ -83,6 +83,16 @@ public class PlayerCombat : MonoBehaviour
         
     }
 
+    public void PlayerHeal(int healing)
+    {   
+        if (playerCurrentHealth < playerMaxHealth)
+        {
+          playerCurrentHealth += healing;  
+        }
+        
+        healthSlider.value = playerCurrentHealth;
+    }
+
     public void PlayerDeath()
     {
         //Reset player to last save state
