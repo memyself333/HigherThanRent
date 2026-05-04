@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
@@ -9,6 +8,7 @@ public class EnemyAI : MonoBehaviour
 
     public Animator anim;
     bool isMoving = false;
+    bool isHurt = false;
 
     private float distance;
     public float distanceBetween;
