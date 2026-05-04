@@ -29,7 +29,7 @@ public class HealthRecovery : MonoBehaviour
         //Damage Enemies
         foreach (Collider2D player in hitPlayer)
         {
-            player.GetComponent<PlayerCombat>().PlayerHeal(recoveryPoints);
+    //        player.GetComponent<PlayerCombat>().PlayerHeal(recoveryPoints);
         }
      }
 
