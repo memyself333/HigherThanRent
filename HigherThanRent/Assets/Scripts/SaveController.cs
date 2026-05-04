@@ -9,6 +9,7 @@ public class SaveController : MonoBehaviour
     public Button saveButton;
     public Button loadButton;
     public int playerHealth; 
+    DialogueSO currentDialogue;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -35,6 +36,11 @@ public class SaveController : MonoBehaviour
         }
 
     }
+
+    private void Update()
+    {
+        
+    }
     public void SaveGame()
     {
         SaveData saveData = new SaveData
@@ -53,7 +59,7 @@ public class SaveController : MonoBehaviour
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
             UnityEngine.SceneManagement.SceneManager.LoadScene(saveData.currentScene);
             GameObject.FindGameObjectWithTag("Player").transform.position = saveData.playerPosition;
-            Time.timeScale = 1;
+
         }
         else
         {
