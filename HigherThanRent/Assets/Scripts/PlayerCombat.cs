@@ -6,8 +6,11 @@ public class PlayerCombat : MonoBehaviour
     //Player Health
     public int playerMaxHealth = 3;
     public int playerCurrentHealth;
-    
+
     public Transform attackPoint;
+
+    public AudioSource audioSource;
+    public AudioClip[] combatSounds;
 
     //animation
     public Animator weaponAnim;
@@ -50,6 +53,7 @@ public class PlayerCombat : MonoBehaviour
     {
         //Attack Aimation Goes Here!!
         weaponAnim.Play("Attack");
+        audioSource.PlayOneShot(combatSounds[0]);
 
         //Detect Enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -70,6 +74,7 @@ public class PlayerCombat : MonoBehaviour
         //Hurt Animation goes here!
         playerAnim.Play("PlayerHurt");
         flowerAnim.Play("HpFlowerFast");
+        audioSource.PlayOneShot(combatSounds[1]);
 
 
         playerAnim.SetBool("hurt", false);

@@ -9,6 +9,9 @@ public class EnemyAI : MonoBehaviour
 
     public Animator anim;
 
+    public AudioClip[] combatSounds;
+    public AudioSource audioSource;
+
     private float distance;
     public float distanceBetween;
 
@@ -39,6 +42,8 @@ public class EnemyAI : MonoBehaviour
 
         //Hurt Animation goes here!
         anim.Play("EnemyHurt");
+        audioSource.PlayOneShot(combatSounds[0]);
+
 
         if (EnemyCurrentHealth <= 0)
         {
@@ -52,6 +57,7 @@ public class EnemyAI : MonoBehaviour
     {
         //Enemy Die Animation Goes Here!!
         anim.Play("EnemyDead");
+        audioSource.PlayOneShot(combatSounds[1]);
 
         //Disable the enemy 
         GetComponent<Collider2D>().enabled = false;
@@ -67,6 +73,10 @@ public class EnemyAI : MonoBehaviour
 
         if (distance < distanceBetween)
         {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(combatSounds[2]);
+            }
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
         }
 
