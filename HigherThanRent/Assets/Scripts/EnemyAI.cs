@@ -5,6 +5,14 @@ using UnityEngine.Events;
 
 public class EnemyAI : MonoBehaviour
 {
+    // KNOCKBACK
+     [SerializeField]
+    private Rigidbody2D rb2d; // reference to what rigidbody the force will be applied to
+
+    [SerializeField]
+    private float strength = 16, delay = 0.15f; // how powerful it is, the delay after which you can move again
+
+    // END KNOCKBACK
     //Enemy AI
     public GameObject Player;
     public float speed;
@@ -42,6 +50,11 @@ public class EnemyAI : MonoBehaviour
         //Hurt Animation goes here!
         anim.Play("EnemyHurt");
 
+        // Changes
+        Vector2 direction = (transform.position - Player.transform.position).normalized; // the direction from the sender
+        rb2d.AddForce(direction*strength, ForceMode2D.Impulse); // the actual knockback
+        // End Changes
+
         if (EnemyCurrentHealth <= 0)
         {
             Die();
@@ -67,7 +80,7 @@ public class EnemyAI : MonoBehaviour
         //Move enemy towards player
         distance = Vector2.Distance(transform.position, Player.transform.position);
 
-        if (distance < distanceBetween)
+        if ((distance < distanceBetween) && (distance > 1))
         {
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
         }

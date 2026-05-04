@@ -6806,13 +6806,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ba6f4493d15b24b9c3c9e4e78c9c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
+  rb2d: {fileID: 1947332279}
+  strength: 16
+  delay: 0.15
   Player: {fileID: 614174416}
   speed: 2
   anim: {fileID: 1947332276}
   distanceBetween: 4
   EnemyMaxHealth: 3
-  enemyAttackRange: 0.5
-  enemyAttackRate: 2
+  enemyAttackRange: 1.5
+  enemyAttackRate: 0.5
   enemyAttackDamage: 1
   enemyAttackPoint: {fileID: 201650964}
   playerLayer:
