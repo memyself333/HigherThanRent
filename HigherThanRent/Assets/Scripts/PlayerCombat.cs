@@ -4,14 +4,18 @@ using UnityEngine.UI;
 public class PlayerCombat : MonoBehaviour
 {
     //Player Health
-    public int playerMaxHealth = 6;
+    public int playerMaxHealth = 3;
     public int playerCurrentHealth;
-    
+
     public Transform attackPoint;
+
+    public AudioSource audioSource;
+    public AudioClip[] combatSounds;
 
     //animation
     public Animator weaponAnim;
     public Animator playerAnim;
+    public Animator flowerAnim;
 
     //Attacks
     public float attackRange = 2f;
@@ -24,15 +28,13 @@ public class PlayerCombat : MonoBehaviour
     //Defines which objects are enemies, only attacks objects detected in this layer 
     public LayerMask enemyLayers;
 
-    //Health Bar
-    public Slider healthSlider;
+
+
+   
 
     void Start()
     {
         playerCurrentHealth = playerMaxHealth;
-
-        healthSlider.maxValue = playerMaxHealth;
-        healthSlider.value = playerCurrentHealth;
     }
 
     // Update is called once per frame
@@ -51,6 +53,7 @@ public class PlayerCombat : MonoBehaviour
     {
         //Attack Aimation Goes Here!!
         weaponAnim.Play("Attack");
+        audioSource.PlayOneShot(combatSounds[0]);
 
         //Detect Enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -67,13 +70,15 @@ public class PlayerCombat : MonoBehaviour
     public void PlayerTakeDamage(int damage)
     {
         playerCurrentHealth -= damage;
-        healthSlider.value = playerCurrentHealth;
 
         //Hurt Animation goes here!
         playerAnim.Play("PlayerHurt");
+        flowerAnim.Play("HpFlowerFast");
+        audioSource.PlayOneShot(combatSounds[1]);
 
 
         playerAnim.SetBool("hurt", false);
+
 
         if (playerCurrentHealth <= 0)
         {

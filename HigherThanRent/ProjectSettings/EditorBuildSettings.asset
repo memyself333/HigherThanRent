@@ -26,6 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainStaircase2F.unity
     guid: 063fc365b5e6a8649a50c9159b3064c7
+  - enabled: 1
+    path: Assets/Scenes/WarningRoom.unity
+    guid: c530f69c46904c94c926fb3bae55aa87
+  - enabled: 1
+    path: Assets/Scenes/BossRoom.unity
+    guid: d5da3292aa47efb429d961b47678b140
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

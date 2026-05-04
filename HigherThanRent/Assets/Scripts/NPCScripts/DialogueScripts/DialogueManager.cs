@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -11,6 +12,15 @@ public class DialogueManager : MonoBehaviour
     public Image portrait;
     public TMP_Text actorName;
     public TMP_Text dialogueText;
+    public Animator borderAnim;
+    public Animator nameAnim;
+    public Animator portraitAnim;
+    public Animator canvasAnim;
+    public Animator dialogueAnim;
+
+
+
+
 
     public bool isDialogueActive;
 
@@ -27,7 +37,6 @@ public class DialogueManager : MonoBehaviour
         {
             Destroy(gameObject); // Ensuring there is only ever ONE version of this script in the game
         }
-
         canvasGroup.alpha = 0;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
@@ -57,11 +66,31 @@ public class DialogueManager : MonoBehaviour
     {
         DialogueLine line = currentDialogue.lines[dialogueIndex];
 
-        portrait.sprite = line.speaker.portrait;
+        if (line.speaker.side == "Left")
+        {
+            borderAnim.Play("BorderToLeft");
+            nameAnim.Play("NameToLeft");
+            dialogueAnim.Play("DialogueToLeft");
+            StartCoroutine(WaitForSecondsLeft());
+            dialogueText.alignment = TextAlignmentOptions.TopLeft;
+
+        }
+        else if (line.speaker.side == "Right")
+        {
+            borderAnim.Play("BorderToRight");
+            nameAnim.Play("NameToRight");
+            dialogueAnim.Play("DialogueToRight");
+            StartCoroutine(WaitForSecondsRight());
+            dialogueText.alignment = TextAlignmentOptions.TopRight;
+        }
+
+
+
         actorName.text = line.speaker.actorName;
 
         dialogueText.text = line.text;
 
+        canvasAnim.Play("DialogueFadeIn");
         canvasGroup.alpha = 1;
         canvasGroup.interactable = true;
         canvasGroup.blocksRaycasts = true;
@@ -69,12 +98,38 @@ public class DialogueManager : MonoBehaviour
         dialogueIndex ++; // Incrementing each time a new line is shown.
     }
 
+    IEnumerator WaitForSecondsLeft()
+    {
+        DialogueLine line = currentDialogue.lines[dialogueIndex];
+
+        
+        portraitAnim.Play("PortraitToLeft");
+        yield return new WaitForSeconds(0.2f);
+        portrait.sprite = line.speaker.portrait;
+        yield return new WaitForSeconds(0.2f);
+      
+
+    }
+
+    IEnumerator WaitForSecondsRight()
+    {
+        DialogueLine line = currentDialogue.lines[dialogueIndex];
+
+
+        portraitAnim.Play("PortraitToRight");
+        yield return new WaitForSeconds(0.2f);
+        portrait.sprite = line.speaker.portrait;
+        yield return new WaitForSeconds(0.2f);
+        
+
+    }
     private void EndDialogue()
     {
         dialogueIndex = 0;
-        isDialogueActive = false;
 
+        canvasAnim.Play("DialogueFadeOut");
         canvasGroup.alpha = 0;
+        isDialogueActive = false;
         canvasGroup.interactable = false;
         canvasGroup.blocksRaycasts = false;
     }
