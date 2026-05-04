@@ -717,14 +717,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 625338031}
     - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: playerAnim
-      value: 
-      objectReference: {fileID: 614174415}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: weaponAnim
-      value: 
-      objectReference: {fileID: 614174414}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 614174422}
@@ -732,26 +724,6 @@ PrefabInstance:
       propertyPath: healthSlider
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: enemyLayers.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: playerCurrentHealth
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: combatSounds.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: 'combatSounds.Array.data[0]'
-      value: 
-      objectReference: {fileID: 8300000, guid: 65a9a9bbf358ce346b13c8b20963e9e6, type: 3}
-    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-      propertyPath: 'combatSounds.Array.data[1]'
-      value: 
-      objectReference: {fileID: 8300000, guid: f2a8f1b63caa3d1409acf7bcc2754bb2, type: 3}
     - target: {fileID: 5688487472508333282, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_Size.x
       value: 0.17
@@ -923,16 +895,6 @@ PrefabInstance:
 --- !u!4 &614174413 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5876633855082192454, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-  m_PrefabInstance: {fileID: 614174412}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &614174414 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7604113527940121991, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-  m_PrefabInstance: {fileID: 614174412}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &614174415 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5729658650662215930, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
   m_PrefabInstance: {fileID: 614174412}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &614174416 stripped

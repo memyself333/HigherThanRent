@@ -288,6 +288,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   playerSpeed: 5
+  footstepStoneClips: []
+  footstepCarpetClips: []
+  audioSource: {fileID: 0}
   rb: {fileID: 4386781051580540796}
   anim: {fileID: 5729658650662215930}
 --- !u!95 &5729658650662215930
@@ -324,13 +327,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b2c5cc212d050b4d96c78ac7eca4d6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
-  playerMaxHealth: 6
+  playerMaxHealth: 3
   playerCurrentHealth: 0
   attackPoint: {fileID: 2072721095455021059}
+  audioSource: {fileID: 0}
+  combatSounds:
+  - {fileID: 8300000, guid: 65a9a9bbf358ce346b13c8b20963e9e6, type: 3}
+  - {fileID: 8300000, guid: f2a8f1b63caa3d1409acf7bcc2754bb2, type: 3}
+  weaponAnim: {fileID: 7604113527940121991}
+  playerAnim: {fileID: 5729658650662215930}
+  flowerAnim: {fileID: 0}
   attackRange: 1.75
   attackDamage: 1
   attackRate: 2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
-  anim: {fileID: 7604113527940121991}
