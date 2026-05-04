@@ -8,7 +8,6 @@ public class EnemyAI : MonoBehaviour
 
     public Animator anim;
     bool isMoving = false;
-    bool isHurt = false;
 
     private float distance;
     public float distanceBetween;
@@ -70,6 +69,7 @@ public class EnemyAI : MonoBehaviour
         {
             isMoving = true; 
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
+            anim.SetBool("Move", true);
         }
 
         if (Time.time >= nextEnemyAttackTime)
@@ -80,8 +80,6 @@ public class EnemyAI : MonoBehaviour
                 nextEnemyAttackTime = Time.time + 5f / enemyAttackRate;
             }
         }
-
-        anim.SetBool("Move", isMoving);
     }
 
      public void EnemyAttack()
