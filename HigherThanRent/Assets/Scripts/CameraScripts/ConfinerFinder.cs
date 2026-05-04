@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class ConfinerFinder : MonoBehaviour
 {
+    public GameObject pauseMenu;
     // When enabled, subscribe the function OnSceneLoaded to the sceneLoaded event, so that when a new scene is loaded, the function will be called and the confiner will be assigned to the camera
     private void OnEnable()
     {
@@ -19,6 +20,7 @@ public class ConfinerFinder : MonoBehaviour
     // Function to find the confiner in the scene and assign it to the CinemachineConfiner2D component on the camera
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        pauseMenu.SetActive(false); // Ensures the pause menu is closed when a new scene is loaded
         CinemachineConfiner2D confiner = GetComponent<CinemachineConfiner2D>();
         confiner.BoundingShape2D = GameObject.FindGameObjectWithTag("Confiner").GetComponent<BoxCollider2D>();
     }

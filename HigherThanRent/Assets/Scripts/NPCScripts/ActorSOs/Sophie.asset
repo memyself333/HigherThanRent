@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53a7986830b2e848897bb5e7919488d, type: 3}
   m_Name: Sophie
   m_EditorClassIdentifier: Assembly-CSharp::ActorSO
-  actorName: Sophie
-  portrait: {fileID: -897314865672324183, guid: a2f71ae4366ff044b8120a48d8d57640, type: 3}
+  actorName: SOPHIE
+  portrait: {fileID: 2803288474973725581, guid: d9a60be2e4291bd4a981b9dbe0f9f4dd, type: 3}
+  side: Right
