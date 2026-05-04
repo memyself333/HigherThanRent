@@ -16,7 +16,7 @@ public class SaveController : MonoBehaviour
         saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
     }
 
-    private void Update()
+    private void Awake()
     {
         if (SceneManager.GetActiveScene().name == "FoxApartment")
         {
@@ -25,7 +25,7 @@ public class SaveController : MonoBehaviour
                 GameObject.FindGameObjectWithTag("SaveLoader").GetComponent<SaveController>().SaveGame();
             });
         }
-        
+
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             loadButton = GameObject.FindGameObjectWithTag("LoadButton").GetComponent<Button>();
@@ -50,9 +50,7 @@ public class SaveController : MonoBehaviour
     {
         if (File.Exists(saveLocation))
         {
-
             SaveData saveData = JsonUtility.FromJson<SaveData>(File.ReadAllText(saveLocation));
-            
             UnityEngine.SceneManagement.SceneManager.LoadScene(saveData.currentScene);
             GameObject.FindGameObjectWithTag("Player").transform.position = saveData.playerPosition;
             Time.timeScale = 1;
