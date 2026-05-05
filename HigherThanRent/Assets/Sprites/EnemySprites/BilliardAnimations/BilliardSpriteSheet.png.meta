@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: b04b2f8159048ed4c97e14aaf24690c6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3939453220183187430
+    second: BilliardSpriteSheet_0
+  - first:
+      213: -4815856881143557954
+    second: BilliardSpriteSheet_1
+  - first:
+      213: 5787335300055624545
+    second: BilliardSpriteSheet_2
+  - first:
+      213: -10399788872455121
+    second: BilliardSpriteSheet_3
+  - first:
+      213: -5153303853692063716
+    second: BilliardSpriteSheet_4
+  - first:
+      213: -3978243807758959521
+    second: BilliardSpriteSheet_5
+  - first:
+      213: 2961600012383857156
+    second: BilliardSpriteSheet_6
+  - first:
+      213: -233611775535392012
+    second: BilliardSpriteSheet_7
+  - first:
+      213: 5344554368958827943
+    second: BilliardSpriteSheet_8
+  - first:
+      213: -6223661211744089703
+    second: BilliardSpriteSheet_9
+  - first:
+      213: -7559260020241778471
+    second: BilliardSpriteSheet_10
+  - first:
+      213: -1609286489650739771
+    second: BilliardSpriteSheet_11
+  - first:
+      213: -7703674894191455184
+    second: BilliardSpriteSheet_12
+  - first:
+      213: -6859123550718084364
+    second: BilliardSpriteSheet_13
+  - first:
+      213: -9061971537588938819
+    second: BilliardSpriteSheet_14
+  - first:
+      213: -2161848930914446830
+    second: BilliardSpriteSheet_15
+  - first:
+      213: -8903231386945724744
+    second: BilliardSpriteSheet_16
+  - first:
+      213: 409477647128031759
+    second: BilliardSpriteSheet_17
+  - first:
+      213: -8959730292079666068
+    second: BilliardSpriteSheet_18
+  - first:
+      213: 2483804781843590193
+    second: BilliardSpriteSheet_19
+  - first:
+      213: 8175929133940493199
+    second: BilliardSpriteSheet_20
+  - first:
+      213: 1750153629270343874
+    second: BilliardSpriteSheet_21
+  - first:
+      213: 6908430404361330904
+    second: BilliardSpriteSheet_22
+  - first:
+      213: -8125350746551096581
+    second: BilliardSpriteSheet_23
+  - first:
+      213: -1347784974358933859
+    second: BilliardSpriteSheet_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ef9946e4dfbba630800000000000000
+      internalID: 3939453220183187430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb0515e9ea3aa2db0800000000000000
+      internalID: -4815856881143557954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16be4e3faceb05050800000000000000
+      internalID: 5787335300055624545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ca486727d0bdff0800000000000000
+      internalID: -10399788872455121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10780dc279cb78b0800000000000000
+      internalID: -5153303853692063716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5c31a0a5507ac8c0800000000000000
+      internalID: -3978243807758959521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 270
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40aaee02587b91920800000000000000
+      internalID: 2961600012383857156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 242
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fa5ddfe35b02ccf0800000000000000
+      internalID: -233611775535392012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 242
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ad8d84c1ebab2a40800000000000000
+      internalID: 5344554368958827943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 242
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 999cd9f2a1d11a9a0800000000000000
+      internalID: -6223661211744089703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 241
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d83da0ff0d181790800000000000000
+      internalID: -7559260020241778471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 241
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5488ac67aaaa9e0800000000000000
+      internalID: -1609286489650739771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 212
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0349f92ef7c071590800000000000000
+      internalID: -7703674894191455184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 212
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fabee8c87f7fc0a0800000000000000
+      internalID: -6859123550718084364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 212
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db79f4126e86d3280800000000000000
+      internalID: -9061971537588938819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 212
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21259cee9d19ff1e0800000000000000
+      internalID: -2161848930914446830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 212
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8beddf3993e517480800000000000000
+      internalID: -8903231386945724744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 179
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02778420c1cea500800000000000000
+      internalID: 409477647128031759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 179
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6cd84125c4a8a380800000000000000
+      internalID: -8959730292079666068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 179
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c24311a4f387220800000000000000
+      internalID: 2483804781843590193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 179
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b4a49ba3cb67170800000000000000
+      internalID: 8175929133940493199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 150
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0050ff37bc94810800000000000000
+      internalID: 1750153629270343874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 150
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d0277fa9dcafdf50800000000000000
+      internalID: 6908430404361330904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 150
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaed54cb84fc3f80800000000000000
+      internalID: -8125350746551096581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BilliardSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 150
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9e0ab9e4b4bb4de0800000000000000
+      internalID: -1347784974358933859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 47c226fd8c8ecbc409731b9d7d9288b6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BilliardSpriteSheet_0: 3939453220183187430
+      BilliardSpriteSheet_1: -4815856881143557954
+      BilliardSpriteSheet_10: -7559260020241778471
+      BilliardSpriteSheet_11: -1609286489650739771
+      BilliardSpriteSheet_12: -7703674894191455184
+      BilliardSpriteSheet_13: -6859123550718084364
+      BilliardSpriteSheet_14: -9061971537588938819
+      BilliardSpriteSheet_15: -2161848930914446830
+      BilliardSpriteSheet_16: -8903231386945724744
+      BilliardSpriteSheet_17: 409477647128031759
+      BilliardSpriteSheet_18: -8959730292079666068
+      BilliardSpriteSheet_19: 2483804781843590193
+      BilliardSpriteSheet_2: 5787335300055624545
+      BilliardSpriteSheet_20: 8175929133940493199
+      BilliardSpriteSheet_21: 1750153629270343874
+      BilliardSpriteSheet_22: 6908430404361330904
+      BilliardSpriteSheet_23: -8125350746551096581
+      BilliardSpriteSheet_24: -1347784974358933859
+      BilliardSpriteSheet_3: -10399788872455121
+      BilliardSpriteSheet_4: -5153303853692063716
+      BilliardSpriteSheet_5: -3978243807758959521
+      BilliardSpriteSheet_6: 2961600012383857156
+      BilliardSpriteSheet_7: -233611775535392012
+      BilliardSpriteSheet_8: 5344554368958827943
+      BilliardSpriteSheet_9: -6223661211744089703
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
