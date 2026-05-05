@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public Image loadButton;
     public Image quitButton;
     public GameObject pauseMenu;
+    public GameObject gameOverScreen;
+    PlayerCombat playerCombat;
 
     private void Awake()
     {
@@ -23,8 +25,12 @@ public class MainMenu : MonoBehaviour
     public void Play()
     {
         Time.timeScale = 1;
+        playerCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
+        playerCombat.playerCurrentHealth = playerCombat.playerMaxHealth;
+        playerCombat.isPlayerDead = false;
         SceneManager.LoadScene(gameSceneName);
-        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(0, 0, 0);  
+        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(0, 0, 0);
+
     }
 
     public void Quit()

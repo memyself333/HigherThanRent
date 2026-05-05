@@ -62,6 +62,7 @@ public class PauseMenu : MonoBehaviour
 
     public void Escape()
     {
+        Time.timeScale = 1;
         gamePaused = false;
         SceneManager.LoadScene("MainMenu");
 
