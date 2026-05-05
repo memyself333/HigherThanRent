@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthRecovery : MonoBehaviour
 {   
@@ -39,12 +40,14 @@ public class HealthRecovery : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (SceneManager.GetActiveScene().name == "CommonRoom")
+        {
         if (collision.CompareTag("Player"))
         {
             Player.GetComponent<PlayerCombat>().PlayerHeal();
             Debug.Log("The collision was detected."); // Ok at least I know it's being detected.
         }
-        
+        }
     }
 
 }

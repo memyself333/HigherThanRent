@@ -101,8 +101,11 @@ public class PlayerCombat : MonoBehaviour
     {
         Debug.Log("The Player Heal function is being called");
 
-        playerCurrentHealth += 1; 
-        
+        if (playerCurrentHealth < playerMaxHealth)
+        {
+           playerCurrentHealth += 1; 
+        }
+         
     //    flowerAnim.Play("HPFlowerFast");
     }
 
