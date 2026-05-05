@@ -9,6 +9,7 @@ TagManager:
   - SaveButton
   - SaveLoader
   - LoadButton
+  - GameOverScreen
   layers:
   - Default
   - TransparentFX
