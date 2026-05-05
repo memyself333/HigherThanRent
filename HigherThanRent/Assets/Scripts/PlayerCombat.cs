@@ -54,10 +54,10 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            PlayerTakeDamage(1);
-        }
+//        if (Input.GetKeyDown(KeyCode.K))
+//        {
+//            PlayerTakeDamage(1);
+//        }
     }
     void Attack()
     {
