@@ -10,6 +10,8 @@ TagManager:
   - SaveLoader
   - LoadButton
   - GameOverScreen
+  - Music
+  - Teleport
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
 { 
@@ -26,6 +27,11 @@ public class EnemyAI : MonoBehaviour
     //Defines which objects is the player, only attacks objects detected in this layer 
     public LayerMask playerLayer;
 
+    public AudioSource audioSource;
+    public AudioClip ambienceClip;
+    public AudioClip combatClip;
+    public bool isEnemyDead = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -45,7 +51,7 @@ public class EnemyAI : MonoBehaviour
             Die();
         }
 
-        anim.SetBool("hurt", false);
+            anim.SetBool("hurt", false);
     }
 
     public void Die()
@@ -55,6 +61,10 @@ public class EnemyAI : MonoBehaviour
 
         //Disable the enemy 
         GetComponent<Collider2D>().enabled = false;
+        isEnemyDead = true;
+        audioSource.Stop();
+        audioSource.clip = ambienceClip;
+        audioSource.Play();
         this.enabled = false;
 
     }
@@ -78,6 +88,19 @@ public class EnemyAI : MonoBehaviour
             {
                 EnemyAttack();
                 nextEnemyAttackTime = Time.time + 5f / enemyAttackRate;
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "CommonRoom")
+        {
+            if (isEnemyDead == false)
+            {
+                if (audioSource.clip != combatClip)
+                {
+                    audioSource.Stop();
+                    audioSource.clip = combatClip;
+                    audioSource.Play();
+                }
             }
         }
     }

@@ -1,5 +1,6 @@
-using UnityEngine;
 using Unity.Cinemachine;
+using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,6 +12,9 @@ public class ConfinerFinder : MonoBehaviour
     public GameObject player;
     public AudioSource doorAudio;
     public AudioClip[] doorClips;
+    public AudioSource audioSource;
+    public AudioClip ambienceClip;
+    public AudioClip combatClip;
 
 
     // When enabled, subscribe the function OnSceneLoaded to the sceneLoaded event, so that when a new scene is loaded, the function will be called and the confiner will be assigned to the camera
@@ -28,6 +32,7 @@ public class ConfinerFinder : MonoBehaviour
     // Function to find the confiner in the scene and assign it to the CinemachineConfiner2D component on the camera
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
             return;
@@ -43,5 +48,13 @@ public class ConfinerFinder : MonoBehaviour
         Time.timeScale = 1; // Resets the time scale to normal when a new scene is loaded
         CinemachineConfiner2D confiner = GetComponent<CinemachineConfiner2D>();
         confiner.BoundingShape2D = GameObject.FindGameObjectWithTag("Confiner").GetComponent<BoxCollider2D>();
+        if (audioSource.clip == combatClip && audioSource.isPlaying)
+        { 
+            audioSource.Stop();
+            audioSource.clip = ambienceClip;
+            audioSource.Play();
+        }
+
+
     }
 }

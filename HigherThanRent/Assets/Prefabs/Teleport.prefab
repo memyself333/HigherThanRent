@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 9097818985927252656}
   m_Layer: 0
   m_Name: Teleport
-  m_TagString: Untagged
+  m_TagString: Teleport
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -296,3 +296,4 @@ MonoBehaviour:
   fadeAnim: {fileID: 2486169383148450828}
   fadeTime: 0.3
   newPlayerPosition: {x: 0, y: 0}
+  currentScene: 

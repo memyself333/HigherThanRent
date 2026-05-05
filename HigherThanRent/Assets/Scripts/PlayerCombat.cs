@@ -29,6 +29,9 @@ public class PlayerCombat : MonoBehaviour
 
     public bool isPlayerDead = false;
 
+    public AudioSource musicSource;
+    public AudioClip gameOverClip;
+
 
 
 
@@ -97,6 +100,10 @@ public class PlayerCombat : MonoBehaviour
 
     public void PlayerDeath()
     {
+        musicSource.Stop();
+        musicSource.clip = gameOverClip;
+        musicSource.loop = false;
+        musicSource.Play();
         isPlayerDead = true;
         playerAnim.updateMode = AnimatorUpdateMode.UnscaledTime; // Ensures the death animation plays even when time is stopped
         playerAnim.Play("PlayerDeath");
