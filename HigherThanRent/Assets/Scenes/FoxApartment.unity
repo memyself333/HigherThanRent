@@ -3347,7 +3347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1453956833819035202, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1453956833819035202, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_IgnoreParentGroups

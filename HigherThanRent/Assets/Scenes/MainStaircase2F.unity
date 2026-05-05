@@ -153,6 +153,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   Player: {fileID: 997523659}
   speed: 2
+  anim: {fileID: 0}
+  combatSounds: []
+  audioSource: {fileID: 0}
   distanceBetween: 4
   EnemyMaxHealth: 3
   enemyAttackRange: 0.5
@@ -334,6 +337,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.30588236
       objectReference: {fileID: 0}
+    - target: {fileID: 1223571895267323578, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7570246833954089379, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01727
@@ -430,6 +437,10 @@ PrefabInstance:
     - target: {fileID: 1223571895267323578, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Color.r
       value: 0.30588236
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223571895267323578, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7570246833954089379, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_LocalPosition.x
@@ -715,12 +726,17 @@ MonoBehaviour:
   playerMaxHealth: 6
   playerCurrentHealth: 0
   attackPoint: {fileID: 997523660}
+  audioSource: {fileID: 0}
+  combatSounds: []
+  playerAnim: {fileID: 0}
+  flowerAnim: {fileID: 0}
   attackRange: 1
   attackDamage: 1
   attackRate: 2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
+  isPlayerDead: 0
 --- !u!1001 &1251074013
 PrefabInstance:
   m_ObjectHideFlags: 0
