@@ -212,6 +212,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1223571895267323578, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7570246833954089379, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.01727
@@ -5142,15 +5146,17 @@ MonoBehaviour:
   playerMaxHealth: 6
   playerCurrentHealth: 0
   attackPoint: {fileID: 1968061415}
-  weaponAnim: {fileID: 0}
+  audioSource: {fileID: 0}
+  combatSounds: []
   playerAnim: {fileID: 0}
+  flowerAnim: {fileID: 0}
   attackRange: 1
   attackDamage: 1
   attackRate: 2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
-  healthSlider: {fileID: 0}
+  isPlayerDead: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
