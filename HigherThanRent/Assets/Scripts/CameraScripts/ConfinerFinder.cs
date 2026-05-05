@@ -9,6 +9,8 @@ public class ConfinerFinder : MonoBehaviour
     public GameObject gameOverScreen;
     PlayerCombat playerCombat;
     public GameObject player;
+    public AudioSource doorAudio;
+    public AudioClip[] doorClips;
 
 
     // When enabled, subscribe the function OnSceneLoaded to the sceneLoaded event, so that when a new scene is loaded, the function will be called and the confiner will be assigned to the camera
@@ -26,6 +28,14 @@ public class ConfinerFinder : MonoBehaviour
     // Function to find the confiner in the scene and assign it to the CinemachineConfiner2D component on the camera
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        if (SceneManager.GetActiveScene().name == "MainMenu")
+        {
+            return;
+        }
+        else
+        {
+            doorAudio.PlayOneShot(doorClips[0]);
+        }
         pauseMenu.SetActive(false); // Ensures the pause menu is closed when a new scene is loaded
         gameOverScreen.SetActive(false); // Ensures the game over screen is closed when a new scene is loaded
         playerCombat = player.GetComponent<PlayerCombat>(); 
