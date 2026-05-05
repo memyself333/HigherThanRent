@@ -504,13 +504,13 @@ MonoBehaviour:
   attackPoint: {fileID: 1850445207}
   weaponAnim: {fileID: 0}
   playerAnim: {fileID: 0}
+  flowerAnim: {fileID: 0}
   attackRange: 1
   attackDamage: 1
   attackRate: 2
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
-  healthSlider: {fileID: 0}
 --- !u!1001 &894308809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6710,12 +6710,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9389a2b6b5fb0dc4caed1eb21012ef6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HealthRecovery
-  Player: {fileID: 793158523}
+  Player: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
   playerLayer:
     serializedVersion: 2
     m_Bits: 2048
   recoveryPoints: 1
   healingRange: 0.5
+  nextHealingTime: 1
 --- !u!61 &1629450960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6746,7 +6747,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

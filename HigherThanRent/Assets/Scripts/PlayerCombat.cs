@@ -64,9 +64,12 @@ public class PlayerCombat : MonoBehaviour
     }
 
     public void PlayerTakeDamage(int damage)
-    {
-        playerCurrentHealth -= damage;
-
+    {   
+        if (playerCurrentHealth > 0)
+        {
+           playerCurrentHealth -= damage; 
+        }
+        
         //Hurt Animation goes here!
         playerAnim.Play("PlayerHurt");
         flowerAnim.Play("HpFlowerFast");
@@ -79,8 +82,16 @@ public class PlayerCombat : MonoBehaviour
         {
             PlayerDeath();
         }
+    
+    }
 
+    public void PlayerHeal()
+    {
+        Debug.Log("The Player Heal function is being called");
+
+        playerCurrentHealth += 1; 
         
+    //    flowerAnim.Play("HPFlowerFast");
     }
 
     public void PlayerDeath()

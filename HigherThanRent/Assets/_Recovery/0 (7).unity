@@ -6964,7 +6964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   rb2d: {fileID: 1947332279}
   strength: 16
-  delay: 2
+  delay: 0.15
   Player: {fileID: 614174416}
   speed: 2
   anim: {fileID: 1947332276}
@@ -6990,7 +6990,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

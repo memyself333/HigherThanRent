@@ -51,8 +51,8 @@ public class EnemyAI : MonoBehaviour
         anim.Play("EnemyHurt");
 
         // Changes
-        Vector2 direction = (transform.position - Player.transform.position).normalized; // the direction from the sender
-        rb2d.AddForce(direction*strength, ForceMode2D.Impulse); // the actual knockback
+    //    Vector2 direction = (transform.position - Player.transform.position).normalized; // the direction from the sender
+    //    rb2d.AddForce(direction*strength, ForceMode2D.Impulse); // the actual knockback
         // End Changes
 
         if (EnemyCurrentHealth <= 0)
@@ -105,8 +105,11 @@ public class EnemyAI : MonoBehaviour
         //Damage Enemies
         foreach (Collider2D player in hitPlayer)
         {
+            rb2d.constraints = RigidbodyConstraints2D.FreezePosition;
             player.GetComponent<PlayerCombat>().PlayerTakeDamage(enemyAttackDamage);
         }
+
+        rb2d.constraints = RigidbodyConstraints2D.None;
      }
 
 }

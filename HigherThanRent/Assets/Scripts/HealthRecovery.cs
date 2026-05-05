@@ -9,10 +9,11 @@ public class HealthRecovery : MonoBehaviour
 
     public int recoveryPoints;
     public float healingRange;
+    public float nextHealingTime = 1f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -21,16 +22,29 @@ public class HealthRecovery : MonoBehaviour
         
     }
 
-    public void Healing()
-     {
-        //Detect if player is in range
-        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(transform.position, healingRange, playerLayer);
+//    public void Healing()
+//     {  
+//        //Detect if player is in range
+//        Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(transform.position, healingRange, playerLayer);
 
         //Damage Enemies
-        foreach (Collider2D player in hitPlayer)
+//        foreach (Collider2D player in hitPlayer)
+//        {
+//            player.GetComponent<PlayerCombat>().PlayerHeal(recoveryPoints);
+//        }
+
+//        gameObject.SetActive(false);
+
+//     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
         {
-    //        player.GetComponent<PlayerCombat>().PlayerHeal(recoveryPoints);
+            Player.GetComponent<PlayerCombat>().PlayerHeal();
+            Debug.Log("The collision was detected."); // Ok at least I know it's being detected.
         }
-     }
+        
+    }
 
 }
