@@ -6961,6 +6961,7 @@ MonoBehaviour:
   Player: {fileID: 1620356928}
   speed: 2
   anim: {fileID: 1208409806}
+  hitRange: 0
   distanceBetween: 4
   EnemyMaxHealth: 3
   enemyAttackRange: 0.5
@@ -7176,9 +7177,10 @@ MonoBehaviour:
   Player: {fileID: 1620356928}
   speed: 2
   anim: {fileID: 1223804763}
+  hitRange: 1
   distanceBetween: 4
-  EnemyMaxHealth: 3
-  enemyAttackRange: 0.5
+  EnemyMaxHealth: 5
+  enemyAttackRange: 1.5
   enemyAttackRate: 2
   enemyAttackDamage: 1
   enemyAttackPoint: {fileID: 736368686}
@@ -7198,7 +7200,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7219,7 +7221,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0058666617, y: 0.06167291}
+  m_Offset: {x: -0.004025936, y: 0.32547364}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7229,7 +7231,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22474489, y: 0.17173201}
+  m_Size: {x: 1.6162939, y: 0.6993335}
   m_EdgeRadius: 0
 --- !u!50 &1223804766
 Rigidbody2D:
@@ -7373,6 +7375,14 @@ PrefabInstance:
       propertyPath: 'persistentObjects.Array.data[5]'
       value: 
       objectReference: {fileID: 548542713}
+    - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
+      propertyPath: 'persistentObjects.Array.data[6]'
+      value: 
+      objectReference: {fileID: 1464118563}
+    - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
+      propertyPath: 'persistentObjects.Array.data[7]'
+      value: 
+      objectReference: {fileID: 1223804762}
     - target: {fileID: 3894600863851649858, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1781
@@ -7558,9 +7568,10 @@ MonoBehaviour:
   Player: {fileID: 1620356928}
   speed: 2
   anim: {fileID: 1464118564}
+  hitRange: 1
   distanceBetween: 4
-  EnemyMaxHealth: 3
-  enemyAttackRange: 0.5
+  EnemyMaxHealth: 5
+  enemyAttackRange: 1.5
   enemyAttackRate: 2
   enemyAttackDamage: 1
   enemyAttackPoint: {fileID: 108843778}
@@ -7580,7 +7591,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7601,7 +7612,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0058666617, y: 0.06167291}
+  m_Offset: {x: -0.010620594, y: 0.012210846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -7611,7 +7622,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.22474489, y: 0.17173201}
+  m_Size: {x: 1.1150703, y: 1.0488663}
   m_EdgeRadius: 0
 --- !u!50 &1464118567
 Rigidbody2D:

@@ -46,6 +46,7 @@ public class HealthRecovery : MonoBehaviour
         {
             Player.GetComponent<PlayerCombat>().PlayerHeal();
             Debug.Log("The collision was detected."); // Ok at least I know it's being detected.
+            gameObject.SetActive(false);
         }
         }
     }

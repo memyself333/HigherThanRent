@@ -9,6 +9,8 @@ public class EnemyAI : MonoBehaviour
     public Animator anim;
     bool isMoving = false;
 
+    public int hitRange;
+
     private float distance;
     public float distanceBetween;
 
@@ -45,7 +47,7 @@ public class EnemyAI : MonoBehaviour
             Die();
         }
 
-        anim.SetBool("hurt", false);
+        anim.SetBool("Hurt", false);
     }
 
     public void Die()
@@ -65,16 +67,20 @@ public class EnemyAI : MonoBehaviour
         //Move enemy towards player
         distance = Vector2.Distance(transform.position, Player.transform.position);
 
-        if (distance < distanceBetween)
+        if ((distance < distanceBetween) && (distance > 1))
         {
             isMoving = true; 
-            transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
             anim.SetBool("Move", true);
+        }
+        else
+        {
+            anim.SetBool("Move", false);
         }
 
         if (Time.time >= nextEnemyAttackTime)
         {
-            if (distance <= 1)
+            if (distance <= hitRange)
             {
                 EnemyAttack();
                 nextEnemyAttackTime = Time.time + 5f / enemyAttackRate;
@@ -85,6 +91,7 @@ public class EnemyAI : MonoBehaviour
      public void EnemyAttack()
      {
         //Enemy Attack Animation
+        anim.Play("EnemyAttack");
 
         //Detect if player is in range
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(enemyAttackPoint.position, enemyAttackRange, playerLayer);
