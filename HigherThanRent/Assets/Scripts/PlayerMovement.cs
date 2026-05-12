@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     private int lastClipIndex = -1;
     public Rigidbody2D rb;
     public Animator anim;
+    public int direction;
 
 
 
@@ -29,7 +30,22 @@ public class PlayerMovement : MonoBehaviour
 
         // Set player velocity based on horizsontal and vertical variables, multplied by the playerSpeed set in the inspector
         rb.linearVelocity = new Vector2(horizontal * playerSpeed, vertical * playerSpeed);
-
+        if (horizontal > 0)
+        {
+            direction = 1;
+        }
+        else if (horizontal < 0)
+        {
+            direction = 3;
+        }
+        else if (vertical > 0)
+        {
+            direction = 2;
+        }
+        else
+        {
+            direction = 0;
+        }
         if (rb.linearVelocity.magnitude > 0.1f && !audioSource.isPlaying)
         {
             if (SceneManager.GetActiveScene().name == "MainMenu")
