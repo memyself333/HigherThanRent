@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 37ad699d6704b1841a4dd09577ba698a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3099638384765150753
+    second: ElectricityUtilitwinSpritesheet_0
+  - first:
+      213: -8329576681120506739
+    second: ElectricityUtilitwinSpritesheet_1
+  - first:
+      213: -5935361898172655565
+    second: ElectricityUtilitwinSpritesheet_2
+  - first:
+      213: 2659106248409982296
+    second: ElectricityUtilitwinSpritesheet_3
+  - first:
+      213: 3029105356268711733
+    second: ElectricityUtilitwinSpritesheet_4
+  - first:
+      213: -73996542508625882
+    second: ElectricityUtilitwinSpritesheet_5
+  - first:
+      213: -1843259810863958091
+    second: ElectricityUtilitwinSpritesheet_6
+  - first:
+      213: 7358409078631916115
+    second: ElectricityUtilitwinSpritesheet_7
+  - first:
+      213: -1912356324920125566
+    second: ElectricityUtilitwinSpritesheet_8
+  - first:
+      213: -2538354896259599334
+    second: ElectricityUtilitwinSpritesheet_9
+  - first:
+      213: 5926972672800628155
+    second: ElectricityUtilitwinSpritesheet_10
+  - first:
+      213: -7297996930142388521
+    second: ElectricityUtilitwinSpritesheet_11
+  - first:
+      213: -6799157421611535170
+    second: ElectricityUtilitwinSpritesheet_12
+  - first:
+      213: 3763475653100045262
+    second: ElectricityUtilitwinSpritesheet_13
+  - first:
+      213: 8677145220375093208
+    second: ElectricityUtilitwinSpritesheet_14
+  - first:
+      213: -7708497816859776587
+    second: ElectricityUtilitwinSpritesheet_15
+  - first:
+      213: -1759461670642863480
+    second: ElectricityUtilitwinSpritesheet_16
+  - first:
+      213: -275240704437109455
+    second: ElectricityUtilitwinSpritesheet_17
+  - first:
+      213: 7258132593845245556
+    second: ElectricityUtilitwinSpritesheet_18
+  - first:
+      213: 8713284408363477826
+    second: ElectricityUtilitwinSpritesheet_19
+  - first:
+      213: 5906070110283742330
+    second: ElectricityUtilitwinSpritesheet_20
+  - first:
+      213: -2318105768107260480
+    second: ElectricityUtilitwinSpritesheet_21
+  - first:
+      213: 7148589250782226319
+    second: ElectricityUtilitwinSpritesheet_22
+  - first:
+      213: 5183756785598585483
+    second: ElectricityUtilitwinSpritesheet_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 264
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd958e7cf4fdbf4d0800000000000000
+      internalID: -3099638384765150753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 264
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8c5f68f326676c80800000000000000
+      internalID: -8329576681120506739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 264
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 338d70eeccb51ada0800000000000000
+      internalID: -5935361898172655565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 264
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855af7c5b0b07e420800000000000000
+      internalID: 2659106248409982296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 230
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f21abc54b890a20800000000000000
+      internalID: 3029105356268711733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 230
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6209a21698c19fef0800000000000000
+      internalID: -73996542508625882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 230
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b733b0d7fc6b66e0800000000000000
+      internalID: -1843259810863958091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 230
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3526ddb02125e1660800000000000000
+      internalID: 7358409078631916115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 194
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2871a29fd02f575e0800000000000000
+      internalID: -1912356324920125566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 194
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14b29eaba3f5ccd0800000000000000
+      internalID: -2538354896259599334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 194
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd9ab35e36d04250800000000000000
+      internalID: 5926972672800628155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 194
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7deb8fe557e48ba90800000000000000
+      internalID: -7297996930142388521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 194
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb432e8395a84a1a0800000000000000
+      internalID: -6799157421611535170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 157
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec30cdfaa2d8a3430800000000000000
+      internalID: 3763475653100045262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 157
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df9fecba996b6870800000000000000
+      internalID: 8677145220375093208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 157
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9e232b31ae50590800000000000000
+      internalID: -7708497816859776587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 157
+        width: 28
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882ba6dbee22597e0800000000000000
+      internalID: -1759461670642863480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13d3c40a9062e2cf0800000000000000
+      internalID: -275240704437109455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47694dc83211ab460800000000000000
+      internalID: 7258132593845245556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b6473210ecbe870800000000000000
+      internalID: 8713284408363477826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7cb30e397396f150800000000000000
+      internalID: 5906070110283742330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c5ce24f51f64dfd0800000000000000
+      internalID: -2318105768107260480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87ec0a7c04e43360800000000000000
+      internalID: 7148589250782226319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricityUtilitwinSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 118
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8adf9fe45760f740800000000000000
+      internalID: 5183756785598585483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bb3f449f12e3aaf49a5d2f84678c749e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ElectricityUtilitwinSpritesheet_0: -3099638384765150753
+      ElectricityUtilitwinSpritesheet_1: -8329576681120506739
+      ElectricityUtilitwinSpritesheet_10: 5926972672800628155
+      ElectricityUtilitwinSpritesheet_11: -7297996930142388521
+      ElectricityUtilitwinSpritesheet_12: -6799157421611535170
+      ElectricityUtilitwinSpritesheet_13: 3763475653100045262
+      ElectricityUtilitwinSpritesheet_14: 8677145220375093208
+      ElectricityUtilitwinSpritesheet_15: -7708497816859776587
+      ElectricityUtilitwinSpritesheet_16: -1759461670642863480
+      ElectricityUtilitwinSpritesheet_17: -275240704437109455
+      ElectricityUtilitwinSpritesheet_18: 7258132593845245556
+      ElectricityUtilitwinSpritesheet_19: 8713284408363477826
+      ElectricityUtilitwinSpritesheet_2: -5935361898172655565
+      ElectricityUtilitwinSpritesheet_20: 5906070110283742330
+      ElectricityUtilitwinSpritesheet_21: -2318105768107260480
+      ElectricityUtilitwinSpritesheet_22: 7148589250782226319
+      ElectricityUtilitwinSpritesheet_23: 5183756785598585483
+      ElectricityUtilitwinSpritesheet_3: 2659106248409982296
+      ElectricityUtilitwinSpritesheet_4: 3029105356268711733
+      ElectricityUtilitwinSpritesheet_5: -73996542508625882
+      ElectricityUtilitwinSpritesheet_6: -1843259810863958091
+      ElectricityUtilitwinSpritesheet_7: 7358409078631916115
+      ElectricityUtilitwinSpritesheet_8: -1912356324920125566
+      ElectricityUtilitwinSpritesheet_9: -2538354896259599334
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

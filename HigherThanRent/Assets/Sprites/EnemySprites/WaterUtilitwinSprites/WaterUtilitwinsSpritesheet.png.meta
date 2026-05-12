@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 84799a2d72ec3844e9ce1572735ba2d5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2841047694869482600
+    second: WaterUtilitwinsSpritesheet_0
+  - first:
+      213: -1797856000188039735
+    second: WaterUtilitwinsSpritesheet_1
+  - first:
+      213: -6344550962824479436
+    second: WaterUtilitwinsSpritesheet_2
+  - first:
+      213: -8414712059840002818
+    second: WaterUtilitwinsSpritesheet_3
+  - first:
+      213: -6255249310760733600
+    second: WaterUtilitwinsSpritesheet_4
+  - first:
+      213: -5603445435596066824
+    second: WaterUtilitwinsSpritesheet_5
+  - first:
+      213: 8625618228859413212
+    second: WaterUtilitwinsSpritesheet_6
+  - first:
+      213: 7351373330660432546
+    second: WaterUtilitwinsSpritesheet_7
+  - first:
+      213: 7244191479431398376
+    second: WaterUtilitwinsSpritesheet_8
+  - first:
+      213: 8093629959636228712
+    second: WaterUtilitwinsSpritesheet_9
+  - first:
+      213: 5217093522583116976
+    second: WaterUtilitwinsSpritesheet_10
+  - first:
+      213: -7830117981879296962
+    second: WaterUtilitwinsSpritesheet_11
+  - first:
+      213: -1650487425554350445
+    second: WaterUtilitwinsSpritesheet_12
+  - first:
+      213: 3790706345378184745
+    second: WaterUtilitwinsSpritesheet_13
+  - first:
+      213: 3510717467527557047
+    second: WaterUtilitwinsSpritesheet_14
+  - first:
+      213: 5639285700122302287
+    second: WaterUtilitwinsSpritesheet_15
+  - first:
+      213: -4189510708674605869
+    second: WaterUtilitwinsSpritesheet_16
+  - first:
+      213: -5937528836221462519
+    second: WaterUtilitwinsSpritesheet_17
+  - first:
+      213: 4651888347554176946
+    second: WaterUtilitwinsSpritesheet_18
+  - first:
+      213: -4503077255164249617
+    second: WaterUtilitwinsSpritesheet_19
+  - first:
+      213: -7926501358213867420
+    second: WaterUtilitwinsSpritesheet_20
+  - first:
+      213: 8447638377216922812
+    second: WaterUtilitwinsSpritesheet_21
+  - first:
+      213: 8253669516760011790
+    second: WaterUtilitwinsSpritesheet_22
+  - first:
+      213: 3176512178576924216
+    second: WaterUtilitwinsSpritesheet_23
+  - first:
+      213: 4010141041773418927
+    second: WaterUtilitwinsSpritesheet_24
+  - first:
+      213: 8918266053386457502
+    second: WaterUtilitwinsSpritesheet_25
+  - first:
+      213: -6735055914680424556
+    second: WaterUtilitwinsSpritesheet_26
+  - first:
+      213: -3074280524086413783
+    second: WaterUtilitwinsSpritesheet_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893bc5d8c229298d0800000000000000
+      internalID: -2841047694869482600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cdbc774e7bbc07e0800000000000000
+      internalID: -1797856000188039735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43dfb71a380a3f7a0800000000000000
+      internalID: -6344550962824479436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef48a02f6ffe83b80800000000000000
+      internalID: -8414712059840002818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0647992c4e3e039a0800000000000000
+      internalID: -6255249310760733600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ff230d80109c32b0800000000000000
+      internalID: -5603445435596066824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 262
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2ac43241a54b770800000000000000
+      internalID: 8625618228859413212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 226
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa9b415813550660800000000000000
+      internalID: 7351373330660432546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 227
+        width: 34
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e38b68e4c9888460800000000000000
+      internalID: 7244191479431398376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 227
+        width: 32
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86a939ff099525070800000000000000
+      internalID: 8093629959636228712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 227
+        width: 28
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bcde8ddae6d66840800000000000000
+      internalID: 5217093522583116976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c9fa46e25d55390800000000000000
+      internalID: -7830117981879296962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39e759d5e6a4819e0800000000000000
+      internalID: -1650487425554350445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ef51c465b4b9430800000000000000
+      internalID: 3790706345378184745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bf2db6afe298b030800000000000000
+      internalID: 3510717467527557047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f47dabe4774c24e40800000000000000
+      internalID: 5639285700122302287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc41ca153edbd5c0800000000000000
+      internalID: -4189510708674605869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 191
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90891695bf8a99da0800000000000000
+      internalID: -5937528836221462519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 155
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bfdeba2ec3de8040800000000000000
+      internalID: 4651888347554176946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 155
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe93bc1481bd181c0800000000000000
+      internalID: -4503077255164249617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 155
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468d208d2096ff190800000000000000
+      internalID: -7926501358213867420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 155
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb4d8f8b85a0c3570800000000000000
+      internalID: 8447638377216922812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 115
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0453f712bcea8270800000000000000
+      internalID: 8253669516760011790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 115
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83e97cc1ffc351c20800000000000000
+      internalID: 3176512178576924216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 115
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa99e16e702e6a730800000000000000
+      internalID: 4010141041773418927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 115
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e91568c79bb04cb70800000000000000
+      internalID: 8918266053386457502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 115
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497641754564882a0800000000000000
+      internalID: -6735055914680424556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WaterUtilitwinsSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 115
+        width: 34
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9267dedc626f555d0800000000000000
+      internalID: -3074280524086413783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 44e065eec219bb14a884c7c30915c926
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WaterUtilitwinsSpritesheet_0: -2841047694869482600
+      WaterUtilitwinsSpritesheet_1: -1797856000188039735
+      WaterUtilitwinsSpritesheet_10: 5217093522583116976
+      WaterUtilitwinsSpritesheet_11: -7830117981879296962
+      WaterUtilitwinsSpritesheet_12: -1650487425554350445
+      WaterUtilitwinsSpritesheet_13: 3790706345378184745
+      WaterUtilitwinsSpritesheet_14: 3510717467527557047
+      WaterUtilitwinsSpritesheet_15: 5639285700122302287
+      WaterUtilitwinsSpritesheet_16: -4189510708674605869
+      WaterUtilitwinsSpritesheet_17: -5937528836221462519
+      WaterUtilitwinsSpritesheet_18: 4651888347554176946
+      WaterUtilitwinsSpritesheet_19: -4503077255164249617
+      WaterUtilitwinsSpritesheet_2: -6344550962824479436
+      WaterUtilitwinsSpritesheet_20: -7926501358213867420
+      WaterUtilitwinsSpritesheet_21: 8447638377216922812
+      WaterUtilitwinsSpritesheet_22: 8253669516760011790
+      WaterUtilitwinsSpritesheet_23: 3176512178576924216
+      WaterUtilitwinsSpritesheet_24: 4010141041773418927
+      WaterUtilitwinsSpritesheet_25: 8918266053386457502
+      WaterUtilitwinsSpritesheet_26: -6735055914680424556
+      WaterUtilitwinsSpritesheet_27: -3074280524086413783
+      WaterUtilitwinsSpritesheet_3: -8414712059840002818
+      WaterUtilitwinsSpritesheet_4: -6255249310760733600
+      WaterUtilitwinsSpritesheet_5: -5603445435596066824
+      WaterUtilitwinsSpritesheet_6: 8625618228859413212
+      WaterUtilitwinsSpritesheet_7: 7351373330660432546
+      WaterUtilitwinsSpritesheet_8: 7244191479431398376
+      WaterUtilitwinsSpritesheet_9: 8093629959636228712
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

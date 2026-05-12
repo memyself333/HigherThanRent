@@ -1,16 +1,16 @@
-using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyAI : MonoBehaviour
-{
+{ 
     //Enemy AI
     public GameObject Player;
     public float speed;
 
     public Animator anim;
+    bool isMoving = false;
 
-    public AudioClip[] combatSounds;
-    public AudioSource audioSource;
+    public int hitRange;
 
     private float distance;
     public float distanceBetween;
@@ -29,6 +29,11 @@ public class EnemyAI : MonoBehaviour
     //Defines which objects is the player, only attacks objects detected in this layer 
     public LayerMask playerLayer;
 
+    public AudioSource audioSource;
+    public AudioClip ambienceClip;
+    public AudioClip combatClip;
+    public bool isEnemyDead = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -42,25 +47,26 @@ public class EnemyAI : MonoBehaviour
 
         //Hurt Animation goes here!
         anim.Play("EnemyHurt");
-        audioSource.PlayOneShot(combatSounds[0]);
-
 
         if (EnemyCurrentHealth <= 0)
         {
             Die();
         }
 
-        anim.SetBool("hurt", false);
+        anim.SetBool("Hurt", false);
     }
 
     public void Die()
     {
         //Enemy Die Animation Goes Here!!
         anim.Play("EnemyDead");
-        audioSource.PlayOneShot(combatSounds[1]);
 
         //Disable the enemy 
         GetComponent<Collider2D>().enabled = false;
+        isEnemyDead = true;
+        audioSource.Stop();
+        audioSource.clip = ambienceClip;
+        audioSource.Play();
         this.enabled = false;
 
     }
@@ -71,21 +77,36 @@ public class EnemyAI : MonoBehaviour
         //Move enemy towards player
         distance = Vector2.Distance(transform.position, Player.transform.position);
 
-        if (distance < distanceBetween)
+        if ((distance < distanceBetween) && (distance > 1))
         {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(combatSounds[2]);
-            }
-            transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, speed * Time.deltaTime);
+            isMoving = true; 
+            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
+            anim.SetBool("Move", true);
+        }
+        else
+        {
+            anim.SetBool("Move", false);
         }
 
         if (Time.time >= nextEnemyAttackTime)
         {
-            if (distance <= 1)
+            if (distance <= hitRange)
             {
                 EnemyAttack();
                 nextEnemyAttackTime = Time.time + 5f / enemyAttackRate;
+            }
+        }
+
+        if (SceneManager.GetActiveScene().name == "CommonRoom")
+        {
+            if (isEnemyDead == false)
+            {
+                if (audioSource.clip != combatClip)
+                {
+                    audioSource.Stop();
+                    audioSource.clip = combatClip;
+                    audioSource.Play();
+                }
             }
         }
     }
@@ -93,6 +114,7 @@ public class EnemyAI : MonoBehaviour
      public void EnemyAttack()
      {
         //Enemy Attack Animation
+        anim.Play("EnemyAttack");
 
         //Detect if player is in range
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(enemyAttackPoint.position, enemyAttackRange, playerLayer);

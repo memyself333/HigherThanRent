@@ -29,6 +29,9 @@ public class PlayerCombat : MonoBehaviour
 
     public bool isPlayerDead = false;
 
+    public AudioSource musicSource;
+    public AudioClip gameOverClip;
+
 
 
 
@@ -51,10 +54,10 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            PlayerTakeDamage(1);
-        }
+//        if (Input.GetKeyDown(KeyCode.K))
+//        {
+//            PlayerTakeDamage(1);
+//        }
     }
     void Attack()
     {
@@ -75,9 +78,12 @@ public class PlayerCombat : MonoBehaviour
     }
 
     public void PlayerTakeDamage(int damage)
-    {
-        playerCurrentHealth -= damage;
-
+    {   
+        if (playerCurrentHealth > 0)
+        {
+           playerCurrentHealth -= damage; 
+        }
+        
         //Hurt Animation goes here!
         playerAnim.Play("PlayerHurt");
         flowerAnim.Play("HpFlowerFast");
@@ -91,12 +97,27 @@ public class PlayerCombat : MonoBehaviour
         {
             PlayerDeath();
         }
+    
+    }
 
-        
+    public void PlayerHeal()
+    {
+        Debug.Log("The Player Heal function is being called");
+
+        if (playerCurrentHealth < playerMaxHealth)
+        {
+           playerCurrentHealth += 1; 
+        }
+         
+    //    flowerAnim.Play("HPFlowerFast");
     }
 
     public void PlayerDeath()
     {
+        musicSource.Stop();
+        musicSource.clip = gameOverClip;
+        musicSource.loop = false;
+        musicSource.Play();
         isPlayerDead = true;
         playerAnim.updateMode = AnimatorUpdateMode.UnscaledTime; // Ensures the death animation plays even when time is stopped
         playerAnim.Play("PlayerDeath");
