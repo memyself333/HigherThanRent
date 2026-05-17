@@ -263,7 +263,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 2
+    OrthographicSize: 2.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -332,3 +332,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eaf1d484e22bc244b6ebb3e00edc71d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConfinerFinder
+  pauseMenu: {fileID: 0}
+  gameOverScreen: {fileID: 0}
+  player: {fileID: 0}
+  doorAudio: {fileID: 0}
+  doorClips: []
+  audioSource: {fileID: 0}
+  ambienceClip: {fileID: 0}
+  combatClip: {fileID: 0}

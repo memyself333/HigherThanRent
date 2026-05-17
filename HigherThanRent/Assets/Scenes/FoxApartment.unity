@@ -439,7 +439,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -19.659266, y: 0.77740693}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -449,7 +449,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 9.993778, y: 13.008537}
+  m_Size: {x: 10, y: 13}
   m_EdgeRadius: 0
 --- !u!4 &155183703
 Transform:
@@ -460,7 +460,7 @@ Transform:
   m_GameObject: {fileID: 155183701}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.66057, y: 0.73001, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2583,6 +2583,7 @@ MonoBehaviour:
   Player: {fileID: 1244978327}
   speed: 2
   anim: {fileID: 1761934996}
+  hitRange: 0
   distanceBetween: 4
   EnemyMaxHealth: 3
   enemyAttackRange: 0.5
@@ -2592,6 +2593,10 @@ MonoBehaviour:
   playerLayer:
     serializedVersion: 2
     m_Bits: 2048
+  audioSource: {fileID: 0}
+  ambienceClip: {fileID: 0}
+  combatClip: {fileID: 0}
+  isEnemyDead: 0
 --- !u!61 &1761934992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3144,19 +3149,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 0.67558
+      value: 0.99710083
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
-      value: 0.53865814
+      value: 0.11962652
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.x
-      value: -2.503182
+      value: -2.5189943
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.y
-      value: 4.600296
+      value: 5.010103
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: newPlayerPosition.x
@@ -3621,6 +3626,10 @@ PrefabInstance:
     - target: {fileID: 7816113090132915179, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
       propertyPath: m_Name
       value: Cameras
+      objectReference: {fileID: 0}
+    - target: {fileID: 9028729145111330717, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
+      propertyPath: orthographic size
+      value: 2.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

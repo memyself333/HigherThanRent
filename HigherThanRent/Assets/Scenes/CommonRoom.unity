@@ -191,6 +191,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cameras
       objectReference: {fileID: 0}
+    - target: {fileID: 9028729145111330717, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
+      propertyPath: orthographic size
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -481,7 +485,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -34.66332, y: 41.769737}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -491,7 +495,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 8.000252, y: 13.00296}
+  m_Size: {x: 10, y: 13}
   m_EdgeRadius: 0
 --- !u!4 &453068039
 Transform:
@@ -502,7 +506,7 @@ Transform:
   m_GameObject: {fileID: 453068037}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.66057, y: 0.73001, z: 0}
+  m_LocalPosition: {x: -14.5, y: 42.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -616,14 +620,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   playerMaxHealth: 6
   playerCurrentHealth: 0
-  attackPoint: {fileID: 1850445207}
+  playerMovement: {fileID: 0}
+  direction: 0
+  axeAttackPoint: {fileID: 0}
+  foxAttackPoint: {fileID: 0}
   audioSource: {fileID: 0}
   combatSounds: []
   playerAnim: {fileID: 0}
   flowerAnim: {fileID: 0}
-  attackRange: 1
-  attackDamage: 1
-  attackRate: 2
+  axeAttackRange: 2
+  foxAttackRange: 0.5
+  axeAttackDamage: 1
+  foxAttackDamage: 1
+  foxAttackRate: 2
+  axeAttackRate: 1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -700,19 +710,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 0.53679657
+      value: 0.15113258
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
-      value: 0.5572052
+      value: 0.9936218
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.x
-      value: -11.471556
+      value: -11.09604
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.y
-      value: 39.52751
+      value: 39.5698
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: sceneToLoad
@@ -7427,11 +7437,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1624486457}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1850445207 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2072721095455021059, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-  m_PrefabInstance: {fileID: 793158521}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1984305832
 GameObject:
   m_ObjectHideFlags: 0

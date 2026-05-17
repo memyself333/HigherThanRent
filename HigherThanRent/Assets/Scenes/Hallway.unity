@@ -173,11 +173,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 0.49462605
+      value: 0.9987848
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
-      value: 0.5330429
+      value: 0.15000153
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.x
@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.y
-      value: 21.65736
+      value: 21.987286
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: sceneToLoad
@@ -262,19 +262,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 0.5316167
+      value: 0.99543476
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
-      value: 0.5222244
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.x
-      value: -2.5223157
+      value: -2.5151434
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.y
-      value: 8.608791
+      value: 8.1378
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: sceneToLoad
@@ -4473,7 +4473,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -22.153477, y: 15.269723}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4483,7 +4483,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.9798374, y: 17.994795}
+  m_Size: {x: 10, y: 18}
   m_EdgeRadius: 0
 --- !u!4 &1011906278
 Transform:
@@ -4494,7 +4494,7 @@ Transform:
   m_GameObject: {fileID: 1011906276}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.66057, y: 0.73001, z: 0}
+  m_LocalPosition: {x: -2.5, y: 16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5131,11 +5131,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
   m_PrefabInstance: {fileID: 1968061412}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1968061415 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2072721095455021059, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-  m_PrefabInstance: {fileID: 1968061412}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1968061416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5150,14 +5145,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   playerMaxHealth: 6
   playerCurrentHealth: 0
-  attackPoint: {fileID: 1968061415}
+  playerMovement: {fileID: 0}
+  direction: 0
+  axeAttackPoint: {fileID: 0}
+  foxAttackPoint: {fileID: 0}
   audioSource: {fileID: 0}
   combatSounds: []
   playerAnim: {fileID: 0}
   flowerAnim: {fileID: 0}
-  attackRange: 1
-  attackDamage: 1
-  attackRate: 2
+  axeAttackRange: 2
+  foxAttackRange: 0.5
+  axeAttackDamage: 1
+  foxAttackDamage: 1
+  foxAttackRate: 2
+  axeAttackRate: 1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024

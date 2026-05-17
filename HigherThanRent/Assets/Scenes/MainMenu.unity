@@ -1027,6 +1027,10 @@ PrefabInstance:
       propertyPath: 'doorClips.Array.data[1]'
       value: 
       objectReference: {fileID: 8300000, guid: 50117ff75373d6c45a60efbbce2bd7e5, type: 3}
+    - target: {fileID: 9028729145111330717, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
+      propertyPath: orthographic size
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
