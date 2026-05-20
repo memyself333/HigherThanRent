@@ -1928,7 +1928,9 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   ambienceClip: {fileID: 0}
   combatClip: {fileID: 0}
+  gameOverClip: {fileID: 0}
   isEnemyDead: 0
+  isPlayerDead: 0
 --- !u!61 &967310836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3486,6 +3488,7 @@ MonoBehaviour:
   quitButton: {fileID: 975253627}
   pauseMenu: {fileID: 2064199419}
   gameOverScreen: {fileID: 904844239}
+  enemy: {fileID: 1947332275}
   audioSource: {fileID: 117984342}
   mainMenuClip: {fileID: 8300000, guid: aed41fb548591624b9224d51157e55a5, type: 3}
   ambienceClip: {fileID: 8300000, guid: 68c8d2534fc5dd24c93adfa6e3ad398a, type: 3}
@@ -8500,7 +8503,9 @@ MonoBehaviour:
   audioSource: {fileID: 117984342}
   ambienceClip: {fileID: 8300000, guid: 68c8d2534fc5dd24c93adfa6e3ad398a, type: 3}
   combatClip: {fileID: 8300000, guid: 2e7caabae70948d4496727dc11310c60, type: 3}
+  gameOverClip: {fileID: 8300000, guid: cd266078f4ffaa14198e260792667f1c, type: 3}
   isEnemyDead: 0
+  isPlayerDead: 0
 --- !u!61 &1947332278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9034,7 +9039,9 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   ambienceClip: {fileID: 0}
   combatClip: {fileID: 0}
+  gameOverClip: {fileID: 0}
   isEnemyDead: 0
+  isPlayerDead: 0
 --- !u!61 &2072714601
 BoxCollider2D:
   m_ObjectHideFlags: 0
