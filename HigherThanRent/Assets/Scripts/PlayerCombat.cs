@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerCombat : MonoBehaviour
@@ -7,6 +8,7 @@ public class PlayerCombat : MonoBehaviour
     public int playerMaxHealth = 3;
     public int playerCurrentHealth;
     public PlayerMovement playerMovement;
+    public Chest chest;
     public int direction;
 
     public Transform axeAttackPoint;
@@ -55,6 +57,10 @@ public class PlayerCombat : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "CommonRoom")
+        {
+            chest = GameObject.Find("Chest").GetComponent<Chest>(); ;
+        }
         direction = playerMovement.direction;
         if (direction == 0)
         {
@@ -76,8 +82,16 @@ public class PlayerCombat : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                AxeAttack();
-                nextAttackTime = Time.time + 1f / axeAttackRate;
+                if (chest.axeAquired)
+                {
+                    AxeAttack();
+                    nextAttackTime = Time.time + 1f / axeAttackRate;
+                }
+                else
+                {
+                    FoxAttack();
+                    nextAttackTime = Time.time + 1f / foxAttackRate;
+                }
             }
         }
     }
@@ -174,5 +188,10 @@ public class PlayerCombat : MonoBehaviour
         playerAnim.updateMode = AnimatorUpdateMode.UnscaledTime; // Ensures the death animation plays even when time is stopped
         playerAnim.Play("PlayerDeath");
         playerAnim.updateMode = AnimatorUpdateMode.Normal; // Resets the update mode to normal after the death animation has played
+    }
+
+    public void AquireAxe()
+    {
+        playerAnim.Play("AquireAxe");
     }
 }
