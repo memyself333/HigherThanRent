@@ -92,4 +92,15 @@ public class PlayerMovement : MonoBehaviour
         lastClipIndex = nextClipIndex;
         audioSource.PlayOneShot(footstepCarpetClips[nextClipIndex]);
     }
+
+    public void EnableMovement()
+    {
+        this.enabled = true;
+    }
+
+    public void DisableMovement()
+    {
+        rb.linearVelocity = Vector2.zero; // Stop the player immediately
+        this.enabled = false;
+    }
 }

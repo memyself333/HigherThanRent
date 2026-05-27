@@ -12,6 +12,8 @@ TagManager:
   - GameOverScreen
   - Music
   - Teleport
+  - Trigger
+  - Director
   layers:
   - Default
   - TransparentFX
