@@ -47,6 +47,7 @@ Material:
     - _frequency: 1
     - _shift: 0
     m_Colors:
+    - _BaseColor: {r: 0.2924528, g: 0.0041384757, b: 0.0041384757, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

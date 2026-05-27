@@ -5,6 +5,7 @@ Shader "Custom/WobbleEffect"
         _frequency("Frequency",float) = 1
         _shift("Shift",float) = 0
         _amplitude("Amplitude",float) = 0
+        [MainColor] _BaseColor ("Base Color", Color) = (1,1,1,1)
     }
 
         SubShader
@@ -33,9 +34,11 @@ Shader "Custom/WobbleEffect"
                 // This function handles the different ways XR platforms handle texture arrays.
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(input);
 
+
             // Sample the texture using the SAMPLE_TEXTURE2D_X_LOD function
             float2 uv = input.texcoord.xy;
             half4 color = SAMPLE_TEXTURE2D_X_LOD(_BlitTexture, sampler_LinearRepeat, uv, _BlitMipLevel);
+
 
 
             const float pi = 3.14159;

@@ -215,6 +215,8 @@ GameObject:
   - component: {fileID: 5035848572689153746}
   - component: {fileID: 5108143045077013013}
   - component: {fileID: 2715833215637276895}
+  - component: {fileID: 4386388512528749761}
+  - component: {fileID: 7588053792940061462}
   - component: {fileID: 8423917303561361995}
   m_Layer: 0
   m_Name: CinemachineCamera
@@ -320,6 +322,71 @@ MonoBehaviour:
     MaxWindowSize: 0
     Padding: 0
   m_LegacyMaxWindowSize: -2
+--- !u!114 &4386388512528749761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8286551045270225428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e93068571d638fd40aab5295c7507c8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WobbleEffect
+  wobbleEffectMaterial: {fileID: 2100000, guid: 8dfb850641ca6a046b2c345150273ed2, type: 2}
+  wobbleActive: 0
+  frequency: 1
+  shift: 0
+  amplitude: 0
+  maxAmplitude: 0.2
+  shiftSpeed: 5
+  amplitudeSpeed: 0.025
+--- !u!114 &7588053792940061462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8286551045270225428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Timeline::UnityEngine.Timeline.SignalReceiver
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 7005088e2198b8946869e587882cd968, type: 2}
+    - {fileID: 11400000, guid: 4df69810ceb30b547a017e9dba7b6e81, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: WobbleEffect, Assembly-CSharp
+          m_MethodName: StartWobble
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: WobbleEffect, Assembly-CSharp
+          m_MethodName: StopWobble
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &8423917303561361995
 MonoBehaviour:
   m_ObjectHideFlags: 0
