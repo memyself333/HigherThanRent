@@ -5,6 +5,7 @@ public class EnemyAI : MonoBehaviour
 { 
     //Enemy AI
     public GameObject Player;
+    public Rigidbody2D rb;
     public float speed;
 
     public Animator anim;
@@ -12,7 +13,7 @@ public class EnemyAI : MonoBehaviour
 
     public int hitRange;
 
-    private float distance;
+    public float distance;
     public float distanceBetween;
 
     //Combat
@@ -87,7 +88,7 @@ public class EnemyAI : MonoBehaviour
         if ((distance < distanceBetween) && (distance > 1))
         {
             isMoving = true; 
-            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
+            rb.linearVelocity = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
             anim.SetBool("Move", true);
         }
         else

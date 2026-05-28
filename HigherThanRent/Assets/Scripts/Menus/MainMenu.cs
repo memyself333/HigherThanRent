@@ -12,7 +12,6 @@ public class MainMenu : MonoBehaviour
     public Image quitButton;
     public GameObject pauseMenu;
     public GameObject gameOverScreen;
-    public GameObject enemy;
     PlayerCombat playerCombat;
     public AudioSource audioSource;
     public AudioClip mainMenuClip;
@@ -21,7 +20,6 @@ public class MainMenu : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 0;
-        enemy.transform.position = new Vector2(-16, 45);
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.loop = true;
         audioSource.clip = mainMenuClip;

@@ -6,14 +6,21 @@ public class TimelinePlayer : MonoBehaviour
 {
     private PlayableDirector director;
     private BoxCollider2D boxCollider2D;
-    public GameObject hallucinateCanvas;
-    public GameObject fakeLevels;
 
 
-    void Awake()
+
+    void Update()
     {
-        director = GameObject.Find("Director").GetComponent<PlayableDirector>();
-        boxCollider2D = GameObject.Find("Trigger").GetComponent<BoxCollider2D>();
+        if (SceneManager.GetActiveScene().name == "Lobby")
+        {
+            director = GameObject.Find("DCommonRoom1").GetComponent<PlayableDirector>();
+            boxCollider2D = GameObject.Find("CCommonRoom1").GetComponent<BoxCollider2D>();
+        }
+        else if (SceneManager.GetActiveScene().name == "Hallway")
+        {
+            director = GameObject.Find("DHallway1").GetComponent<PlayableDirector>();
+            boxCollider2D = GameObject.Find("CHallway1").GetComponent<BoxCollider2D>();
+        }
 
     }
 
