@@ -10,6 +10,8 @@ public class EnemyAI : MonoBehaviour
 
     public Animator anim;
     bool isMoving = false;
+    bool isHurting = false;
+    bool isAttacking = false;
 
     public int hitRange;
 
@@ -46,6 +48,8 @@ public class EnemyAI : MonoBehaviour
 
     public void EnemyTakeDamage(int damage)
     {
+        isHurting = true;
+        isAttacking = false;
         EnemyCurrentHealth -= damage;
 
         //Hurt Animation goes here!
@@ -60,12 +64,14 @@ public class EnemyAI : MonoBehaviour
 
     public void FinishHurt()
     {
+        isHurting = false;
         anim.SetBool("Hurt", false);
     }
 
     public void Die()
     {
         //Enemy Die Animation Goes Here!!
+        rb.linearVelocity = Vector2.zero;
         anim.Play("EnemyDead");
 
         //Disable the enemy 
@@ -84,16 +90,29 @@ public class EnemyAI : MonoBehaviour
         isPlayerDead = Player.GetComponent<PlayerCombat>().isPlayerDead;
         //Move enemy towards player
         distance = Vector2.Distance(transform.position, Player.transform.position);
-
-        if ((distance < distanceBetween) && (distance > 1))
+        Vector2 direction = (Player.transform.position - transform.position).normalized;
+        if (isHurting == true)
         {
-            isMoving = true; 
-            rb.linearVelocity = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
-            anim.SetBool("Move", true);
+            rb.linearVelocity = Vector2.zero;
+        }
+        else if (isAttacking == true)
+        {
+            rb.linearVelocity = Vector2.zero;
         }
         else
         {
-            anim.SetBool("Move", false);
+            if ((distance < distanceBetween) && (distance > 1))
+            {
+                isMoving = true;
+                rb.linearVelocity = direction;
+                anim.SetBool("Move", true);
+            }
+            else
+            {
+                anim.SetBool("Move", false);
+                isMoving = false;
+                rb.linearVelocity = Vector2.zero;
+            }
         }
 
         if (Time.time >= nextEnemyAttackTime)
@@ -134,6 +153,7 @@ public class EnemyAI : MonoBehaviour
      public void EnemyAttack()
      {
         //Enemy Attack Animation
+        isAttacking = true;
         anim.SetBool("Hurt", false);
         anim.SetBool("Attack", true);
 
@@ -149,6 +169,7 @@ public class EnemyAI : MonoBehaviour
 
     public void FinishAttack()
     {
+        isAttacking = false;
         anim.SetBool("Attack", false);
     }
 }
