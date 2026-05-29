@@ -58,6 +58,8 @@ public class EnemyAI : MonoBehaviour
 
     public void Die()
     {
+        //set velocity to 0 
+
         //Enemy Die Animation Goes Here!!
         anim.Play("EnemyDead");
 
