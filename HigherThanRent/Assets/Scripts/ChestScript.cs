@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Chest : MonoBehaviour
 {
@@ -13,6 +14,8 @@ public class Chest : MonoBehaviour
     public PlayerCombat playerCombat;
     public EnemyAI enemyAI;
     public bool enemyIsDead = false;
+    public ParticleSystem chestExplosion;
+    public PlayableDirector chestTimeline;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,20 +33,25 @@ public class Chest : MonoBehaviour
         if (enemyAI.isEnemyDead == true)
         {
             enemyIsDead = true;
-
-        }
-        if (Vector2.Distance(player.transform.position, playerDetector.position) <= playerDetectorRange)
-        {
-            if (!isOpen)
+            if (Vector2.Distance(player.transform.position, playerDetector.position) <= playerDetectorRange)
             {
-                if (Input.GetKeyDown(KeyCode.E))
+                if (!isOpen)
                 {
-                    chestAnim.Play("ChestOpen");
-                    axeAquired = true;
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        chestAnim.Play("ChestOpen");
+                        axeAquired = true;
 
+                    }
                 }
             }
         }
+        else
+        {
+            enemyIsDead = false;
+            chest.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+        }
+
     }
 
     void FinishOpeningChest()
@@ -51,4 +59,15 @@ public class Chest : MonoBehaviour
         playerCombat.AquireAxe();
         isOpen = true;
     }
+
+    public void Appear()
+    {
+        chest.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+        chestExplosion.Play();
+    }
+
+    public void PlayTimeline()
+    {
+        chestTimeline.Play();
+    }   
 }

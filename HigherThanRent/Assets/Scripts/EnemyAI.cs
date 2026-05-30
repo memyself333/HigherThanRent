@@ -38,6 +38,7 @@ public class EnemyAI : MonoBehaviour
     public AudioClip gameOverClip;
     public bool isEnemyDead = false;
     public bool isPlayerDead = false;
+    public Chest chestScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -80,6 +81,7 @@ public class EnemyAI : MonoBehaviour
         audioSource.Stop();
         audioSource.clip = ambienceClip;
         audioSource.Play();
+        chestScript.PlayTimeline();
         this.enabled = false;
 
     }

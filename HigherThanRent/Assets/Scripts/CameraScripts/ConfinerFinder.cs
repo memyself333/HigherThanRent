@@ -18,6 +18,7 @@ public class ConfinerFinder : MonoBehaviour
     public GameObject targetGroup;
     public Transform enemyTransform;
     public Transform playerTransform;
+    public Transform chestTransform;
 
 
 
@@ -65,6 +66,7 @@ public class ConfinerFinder : MonoBehaviour
     public void EnemyFocus()
     {
         targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(playerTransform);
+        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(chestTransform);
         targetGroup.GetComponent<CinemachineTargetGroup>().AddMember(enemyTransform, 1, 0);
 
     }
@@ -72,6 +74,14 @@ public class ConfinerFinder : MonoBehaviour
     public void PlayerFocus()
     {
         targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(enemyTransform);
+        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(chestTransform);
         targetGroup.GetComponent<CinemachineTargetGroup>().AddMember(playerTransform, 1, 0);
+    }
+
+    public void ChestFocus()
+    {
+        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(playerTransform);
+        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(enemyTransform);
+        targetGroup.GetComponent<CinemachineTargetGroup>().AddMember(chestTransform, 1, 0);
     }
 }

@@ -2581,9 +2581,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   Player: {fileID: 1244978327}
+  rb: {fileID: 0}
   speed: 2
   anim: {fileID: 1761934996}
   hitRange: 0
+  distance: 0
   distanceBetween: 4
   EnemyMaxHealth: 3
   enemyAttackRange: 0.5
@@ -2599,6 +2601,7 @@ MonoBehaviour:
   gameOverClip: {fileID: 0}
   isEnemyDead: 0
   isPlayerDead: 0
+  chestScript: {fileID: 0}
 --- !u!61 &1761934992
 BoxCollider2D:
   m_ObjectHideFlags: 0
