@@ -38,11 +38,14 @@ public class PlayerCombat : MonoBehaviour
 
     //Defines which objects are enemies, only attacks objects detected in this layer 
     public LayerMask enemyLayers;
+    public LayerMask doorLayers;
 
     public bool isPlayerDead = false;
 
     public AudioSource musicSource;
     public AudioClip gameOverClip;
+
+    public bool isLobbyDoorBroken = false;
 
 
 
@@ -123,6 +126,7 @@ public class PlayerCombat : MonoBehaviour
         {
             enemy.GetComponent<EnemyAI>().EnemyTakeDamage(foxAttackDamage);
         }
+
     }
     void AxeAttack()
     {
@@ -141,6 +145,15 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<EnemyAI>().EnemyTakeDamage(axeAttackDamage);
         }
 
+        if (SceneManager.GetActiveScene().name == "Lobby")
+        {
+            Collider2D[] breakDoors = Physics2D.OverlapCircleAll(foxAttackPoint.position, foxAttackRange, doorLayers);
+            //Damage Enemies
+            foreach (Collider2D door in breakDoors)
+            {
+                door.GetComponent<DoorScript>().BreakDoor();
+            }
+        }
     }
 
     public void PlayerTakeDamage(int damage)

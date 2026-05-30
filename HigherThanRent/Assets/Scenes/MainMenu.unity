@@ -2027,6 +2027,10 @@ PrefabInstance:
       propertyPath: playerMovement
       value: 
       objectReference: {fileID: 614174425}
+    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: doorLayers.m_Bits
+      value: 8192
+      objectReference: {fileID: 0}
     - target: {fileID: 5688487472508333282, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: m_Size.x
       value: 0.17
