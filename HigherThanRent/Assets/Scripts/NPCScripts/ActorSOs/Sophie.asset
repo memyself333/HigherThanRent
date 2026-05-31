@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Sophie
   m_EditorClassIdentifier: Assembly-CSharp::ActorSO
   actorName: SOPHIE
-  portrait: {fileID: 2803288474973725581, guid: d9a60be2e4291bd4a981b9dbe0f9f4dd, type: 3}
+  portrait: {fileID: 21300000, guid: 7bdbb75cdf15c914999719f6409ea129, type: 3}
   side: Right
