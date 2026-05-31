@@ -19,6 +19,7 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 0;
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.loop = true;
         audioSource.clip = mainMenuClip;
