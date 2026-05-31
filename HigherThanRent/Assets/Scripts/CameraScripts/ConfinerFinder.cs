@@ -38,14 +38,6 @@ public class ConfinerFinder : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
-        if (SceneManager.GetActiveScene().name == "MainMenu")
-        {
-            return;
-        }
-        else
-        {
-            doorAudio.PlayOneShot(doorClips[0]);
-        }
         pauseMenu.SetActive(false); // Ensures the pause menu is closed when a new scene is loaded
         gameOverScreen.SetActive(false); // Ensures the game over screen is closed when a new scene is loaded
         playerCombat = player.GetComponent<PlayerCombat>(); 

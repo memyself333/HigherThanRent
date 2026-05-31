@@ -44,6 +44,7 @@ public class GameOver : MonoBehaviour
         {
             if (playerCombat.isPlayerDead == true)
             {
+                Time.timeScale = 0;
                 StartCoroutine(WaitForDeathAnimation());
             }
             else
@@ -55,12 +56,11 @@ public class GameOver : MonoBehaviour
 
     IEnumerator WaitForDeathAnimation()
     {
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSecondsRealtime(1.7f);
         ShowGameOver();
     }
     public void ShowGameOver()
     {
-        Time.timeScale = 0;
         bBall.mute = true;
         gameOverScreen.SetActive(true);
         backgroundAnim.Play("FadeBackground");

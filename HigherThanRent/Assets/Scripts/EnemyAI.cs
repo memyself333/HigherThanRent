@@ -1,3 +1,4 @@
+using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -39,6 +40,7 @@ public class EnemyAI : MonoBehaviour
     public bool isEnemyDead = false;
     public bool isPlayerDead = false;
     public Chest chestScript;
+    public bool combatAudioReady = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -131,12 +133,16 @@ public class EnemyAI : MonoBehaviour
             if (isEnemyDead == false)
             {
                 if (isPlayerDead == false)
-                {
+                { 
                     if (audioSource.clip != combatClip)
                     {
                         audioSource.Stop();
-                        audioSource.clip = combatClip;
-                        audioSource.Play();
+                        if (combatAudioReady == true)
+                        {
+                            audioSource.Stop();
+                            audioSource.clip = combatClip;
+                            audioSource.Play();
+                        }
                     }
                 }
                 else
@@ -173,6 +179,11 @@ public class EnemyAI : MonoBehaviour
     {
         isAttacking = false;
         anim.SetBool("Attack", false);
+    }
+
+    public void EnableCombatAudio()
+    {
+        combatAudioReady = true;
     }
 }
 

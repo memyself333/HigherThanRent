@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -16,6 +17,8 @@ public class Chest : MonoBehaviour
     public bool enemyIsDead = false;
     public ParticleSystem chestExplosion;
     public PlayableDirector chestTimeline;
+    public AudioSource audioSource;
+    public AudioClip chestOpenSound;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,6 +43,7 @@ public class Chest : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         chestAnim.Play("ChestOpen");
+                        audioSource.PlayOneShot(chestOpenSound);
                         axeAquired = true;
 
                     }
