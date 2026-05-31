@@ -12,6 +12,10 @@ TagManager:
   - GameOverScreen
   - Music
   - Teleport
+  - Trigger
+  - Director
+  - Chest
+  - Enemies
   layers:
   - Default
   - TransparentFX
@@ -19,15 +23,15 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - SaveButton
   - 
   - Items
   - Walls
   - Enemies
   - Player
   - Pool Table
-  - 
-  - 
+  - Door
+  - Chest
   - 
   - 
   - 

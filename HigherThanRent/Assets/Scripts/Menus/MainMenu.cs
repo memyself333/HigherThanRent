@@ -1,4 +1,5 @@
 using UnityEditor.Overlays;
+using UnityEditor.U2D.Tooling.Analyzer;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -19,6 +20,7 @@ public class MainMenu : MonoBehaviour
 
     private void Awake()
     {
+        Time.timeScale = 0;
         audioSource = GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>();
         audioSource.loop = true;
         audioSource.clip = mainMenuClip;
@@ -36,6 +38,16 @@ public class MainMenu : MonoBehaviour
         playerCombat = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>();
         playerCombat.playerCurrentHealth = playerCombat.playerMaxHealth;
         playerCombat.isPlayerDead = false;
+        GameObject.FindGameObjectWithTag("Chest").GetComponent<Chest>().axeAquired = false;
+        GameObject.FindGameObjectWithTag("Enemies").GetComponent<EnemyAI>().isEnemyDead = false;
+        GameObject.FindGameObjectWithTag("Enemies").transform.position = new Vector2(-15.5f, 43f);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>().isCommonRoomDoorBroken = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCombat>().isLobbyDoorBroken = false;
+        GameObject.FindGameObjectWithTag("Chest").GetComponent<Chest>().isOpen = false;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().isHallucinated = false;
+        GameObject.FindGameObjectWithTag("Enemies").GetComponent<EnemyAI>().Load();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Load();
+        GameObject.FindGameObjectWithTag("Chest").GetComponent<Chest>().Load();
         audioSource.Stop();
         audioSource.clip = ambienceClip;
         audioSource.Play();
