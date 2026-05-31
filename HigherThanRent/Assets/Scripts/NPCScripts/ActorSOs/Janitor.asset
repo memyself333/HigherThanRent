@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Janitor
   m_EditorClassIdentifier: Assembly-CSharp::ActorSO
   actorName: Janitor
-  portrait: {fileID: 2489556713216677069, guid: f5e6c4dd2f1d8bb44ac4adc01551e33a, type: 3}
+  portrait: {fileID: 21300000, guid: 238b340c583174d439250671922392f5, type: 3}
   side: Right
