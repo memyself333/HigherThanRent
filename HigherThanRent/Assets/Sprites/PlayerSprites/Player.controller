@@ -368,13 +368,13 @@ AnimatorStateMachine:
     m_Position: {x: 370, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4096010196205493401}
-    m_Position: {x: 720, y: 180, z: 0}
+    m_Position: {x: 710, y: 190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7732914495668736743}
     m_Position: {x: 140, y: 200, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3838109953947906303}
-    m_Position: {x: 370, y: 200, z: 0}
+    m_Position: {x: 430, y: 530, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4619442644008452121}
     m_Position: {x: 370, y: 30, z: 0}
@@ -395,7 +395,7 @@ AnimatorStateMachine:
     m_Position: {x: 640, y: 270, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4087263753089700906}
-    m_Position: {x: 360, y: 390, z: 0}
+    m_Position: {x: 630, y: 360, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 750153409683910865}
     m_Position: {x: 590, y: 430, z: 0}
@@ -736,7 +736,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FoxAttackRght
+  m_Name: FoxAttackRight
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
