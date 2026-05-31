@@ -15,11 +15,6 @@ public class ConfinerFinder : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip ambienceClip;
     public AudioClip combatClip;
-    public GameObject targetGroup;
-    public Transform enemyTransform;
-    public Transform playerTransform;
-    public Transform chestTransform;
-
 
 
     // When enabled, subscribe the function OnSceneLoaded to the sceneLoaded event, so that when a new scene is loaded, the function will be called and the confiner will be assigned to the camera
@@ -61,27 +56,5 @@ public class ConfinerFinder : MonoBehaviour
         }
 
 
-    }
-
-    public void EnemyFocus()
-    {
-        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(playerTransform);
-        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(chestTransform);
-        targetGroup.GetComponent<CinemachineTargetGroup>().AddMember(enemyTransform, 1, 0);
-
-    }
-
-    public void PlayerFocus()
-    {
-        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(enemyTransform);
-        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(chestTransform);
-        targetGroup.GetComponent<CinemachineTargetGroup>().AddMember(playerTransform, 1, 0);
-    }
-
-    public void ChestFocus()
-    {
-        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(playerTransform);
-        targetGroup.GetComponent<CinemachineTargetGroup>().RemoveMember(enemyTransform);
-        targetGroup.GetComponent<CinemachineTargetGroup>().AddMember(chestTransform, 1, 0);
     }
 }

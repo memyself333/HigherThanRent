@@ -13,58 +13,41 @@ public class PlayerMovement : MonoBehaviour
     private int lastClipIndex = -1;
     public Rigidbody2D rb;
     public Animator anim;
-    public int direction;
-    public PlayerCombat playerCombat;
 
 
 
 
     void FixedUpdate()
     {
-            //Get horizontal and vertical inputs from player, assign them to variables which will either equal 1, 0,or -1
-            float horizontal = Input.GetAxisRaw("Horizontal");
-            float vertical = Input.GetAxisRaw("Vertical");
+        //Get horizontal and vertical inputs from player, assign them to variables which will either equal 1, 0,or -1
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
 
-            //Set paramaters in animator to match horizontal and vertical inputs
-            anim.SetFloat("horizontal", horizontal);
-            anim.SetFloat("vertical", vertical);
+        //Set paramaters in animator to match horizontal and vertical inputs
+        anim.SetFloat("horizontal", horizontal);
+        anim.SetFloat("vertical", vertical);
 
-            // Set player velocity based on horizsontal and vertical variables, multplied by the playerSpeed set in the inspector
-            rb.linearVelocity = new Vector2(horizontal * playerSpeed, vertical * playerSpeed);
-            if (horizontal > 0)
+        // Set player velocity based on horizsontal and vertical variables, multplied by the playerSpeed set in the inspector
+        rb.linearVelocity = new Vector2(horizontal * playerSpeed, vertical * playerSpeed);
+
+        if (rb.linearVelocity.magnitude > 0.1f && !audioSource.isPlaying)
+        {
+            if (SceneManager.GetActiveScene().name == "MainMenu")
             {
-                direction = 1;
-            }
-            else if (horizontal < 0)
-            {
-                direction = 3;
-            }
-            else if (vertical > 0)
-            {
-                direction = 2;
+                return;
             }
             else
             {
-                direction = 0;
-            }
-            if (rb.linearVelocity.magnitude > 0.1f && !audioSource.isPlaying)
-            {
-                if (SceneManager.GetActiveScene().name == "MainMenu")
+                if (SceneManager.GetActiveScene().name == "FoxApartment")
                 {
-                    return;
+                    PlayCarpetFootstep();
                 }
                 else
                 {
-                    if (SceneManager.GetActiveScene().name == "FoxApartment")
-                    {
-                        PlayCarpetFootstep();
-                    }
-                    else
-                    {
-                        PlayStoneFootstep();
-                    }
+                    PlayStoneFootstep();
                 }
-            }        
+            }
+        }
     }
 
     public void PlayStoneFootstep()
@@ -92,17 +75,5 @@ public class PlayerMovement : MonoBehaviour
 
         lastClipIndex = nextClipIndex;
         audioSource.PlayOneShot(footstepCarpetClips[nextClipIndex]);
-    }
-
-    public void EnableMovement()
-    {
-        this.enabled = true;
-    }
-
-    public void DisableMovement()
-    {
-        rb.linearVelocity = Vector2.zero; // Stop the player immediately
-        anim.Play("Idle"); // Transition to idle animation
-        this.enabled = false;
     }
 }
