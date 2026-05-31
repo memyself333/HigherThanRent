@@ -127,6 +127,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 255072356829257377, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 916169549714742630, guid: 89c3662a80e23d64eb955a27dfc7d909, type: 3}
+    - target: {fileID: 255072356829257377, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SaveGame
+      objectReference: {fileID: 0}
     - target: {fileID: 1453956833819035202, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_Alpha
       value: 0
@@ -504,6 +512,7 @@ MonoBehaviour:
   isPlayerDead: 0
   chestScript: {fileID: 0}
   combatAudioReady: 0
+  cCommonRoom1: {fileID: 0}
 --- !u!212 &286769537
 SpriteRenderer:
   serializedVersion: 2

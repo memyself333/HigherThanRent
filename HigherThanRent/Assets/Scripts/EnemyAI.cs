@@ -41,12 +41,14 @@ public class EnemyAI : MonoBehaviour
     public bool isPlayerDead = false;
     public Chest chestScript;
     public bool combatAudioReady = false;
+    public GameObject cCommonRoom1;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         EnemyCurrentHealth = EnemyMaxHealth;
         anim.Play("EnemyIdle");
+        
     }
 
     public void EnemyTakeDamage(int damage)
@@ -184,6 +186,17 @@ public class EnemyAI : MonoBehaviour
     public void EnableCombatAudio()
     {
         combatAudioReady = true;
+    }
+
+    public void Load()
+    {
+        if (isEnemyDead == true)
+        {
+            cCommonRoom1.SetActive(false);
+            this.GetComponent<Collider2D>().enabled = false;
+            anim.SetBool("Dead", true);
+            this.enabled = false;
+        }
     }
 }
 

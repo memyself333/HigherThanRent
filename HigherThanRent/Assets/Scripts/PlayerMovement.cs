@@ -17,8 +17,18 @@ public class PlayerMovement : MonoBehaviour
     public int direction;
     public PlayerCombat playerCombat;
     public TMP_Text textBoxtext;
+    public bool isHallucinated = false;
+    public GameObject cHallway;
+    public GameObject fake;
 
-
+    public void Load()
+    {
+        if (isHallucinated)
+        {
+            cHallway.SetActive(false);
+            fake.SetActive(false);
+        }
+    }
 
 
     void FixedUpdate()
@@ -131,5 +141,10 @@ public class PlayerMovement : MonoBehaviour
     public void ClearText()
     {
         textBoxtext.text = "";
+    }
+
+    public void IsHallucinated()
+    {
+        isHallucinated = true;
     }
 }
