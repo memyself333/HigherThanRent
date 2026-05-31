@@ -5038,6 +5038,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7035294152662198062, guid: 0d3901fcbc744774c81199107550fa6f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1169634573}
+      addedObject: {fileID: 1700365137}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d3901fcbc744774c81199107550fa6f, type: 3}
 --- !u!4 &168567703 stripped
@@ -5730,7 +5731,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -22.162586, y: 29.276054}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5740,7 +5741,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 7.9998856, y: 11.988739}
+  m_Size: {x: 10, y: 12}
   m_EdgeRadius: 0
 --- !u!4 &745307842
 Transform:
@@ -5751,7 +5752,7 @@ Transform:
   m_GameObject: {fileID: 745307840}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 19.66057, y: 0.73001, z: 0}
+  m_LocalPosition: {x: -2.5, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5858,19 +5859,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 1.6616166
+      value: 1.9959342
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
-      value: 0.57069016
+      value: 0.15279388
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.x
-      value: -0.9946526
+      value: -1.0177091
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.y
-      value: 29.548258
+      value: 29.990654
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: sceneToLoad
@@ -5882,7 +5883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: newPlayerPosition.y
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6067,11 +6068,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8383650482912899434, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
   m_PrefabInstance: {fileID: 1101982677}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1101982680 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2072721095455021059, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
-  m_PrefabInstance: {fileID: 1101982677}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1101982681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6086,14 +6082,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   playerMaxHealth: 6
   playerCurrentHealth: 0
-  attackPoint: {fileID: 1101982680}
+  playerMovement: {fileID: 0}
+  direction: 0
+  axeAttackPoint: {fileID: 0}
+  foxAttackPoint: {fileID: 0}
   audioSource: {fileID: 0}
   combatSounds: []
   playerAnim: {fileID: 0}
   flowerAnim: {fileID: 0}
-  attackRange: 1
-  attackDamage: 1
-  attackRate: 2
+  axeAttackRange: 2
+  foxAttackRange: 0.5
+  axeAttackDamage: 1
+  foxAttackDamage: 1
+  foxAttackRate: 2
+  axeAttackRate: 1
   enemyLayers:
     serializedVersion: 2
     m_Bits: 1024
@@ -6542,6 +6544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cameras
       objectReference: {fileID: 0}
+    - target: {fileID: 9028729145111330717, guid: 3a70693e64722cb4487994602fd0edfd, type: 3}
+      propertyPath: orthographic size
+      value: 2.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6706,19 +6712,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 0.4705987
+      value: 1.0015197
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
-      value: 0.46263885
+      value: 0.14891052
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.x
-      value: -3.5351794
+      value: -3.5158732
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Offset.y
-      value: 32.59894
+      value: 32.999542
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: sceneToLoad

@@ -5,14 +5,17 @@ public class EnemyAI : MonoBehaviour
 { 
     //Enemy AI
     public GameObject Player;
+    public Rigidbody2D rb;
     public float speed;
 
     public Animator anim;
     bool isMoving = false;
+    bool isHurting = false;
+    bool isAttacking = false;
 
     public int hitRange;
 
-    private float distance;
+    public float distance;
     public float distanceBetween;
 
     //Combat
@@ -32,7 +35,10 @@ public class EnemyAI : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip ambienceClip;
     public AudioClip combatClip;
+    public AudioClip gameOverClip;
     public bool isEnemyDead = false;
+    public bool isPlayerDead = false;
+    public Chest chestScript;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -43,22 +49,30 @@ public class EnemyAI : MonoBehaviour
 
     public void EnemyTakeDamage(int damage)
     {
+        isHurting = true;
+        isAttacking = false;
         EnemyCurrentHealth -= damage;
 
         //Hurt Animation goes here!
-        anim.Play("EnemyHurt");
+        anim.SetBool("Attack", false);
+        anim.SetBool("Hurt", true);
 
         if (EnemyCurrentHealth <= 0)
         {
             Die();
         }
+    }
 
+    public void FinishHurt()
+    {
+        isHurting = false;
         anim.SetBool("Hurt", false);
     }
 
     public void Die()
     {
         //Enemy Die Animation Goes Here!!
+        rb.linearVelocity = Vector2.zero;
         anim.Play("EnemyDead");
 
         //Disable the enemy 
@@ -67,6 +81,7 @@ public class EnemyAI : MonoBehaviour
         audioSource.Stop();
         audioSource.clip = ambienceClip;
         audioSource.Play();
+        chestScript.PlayTimeline();
         this.enabled = false;
 
     }
@@ -74,18 +89,32 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        isPlayerDead = Player.GetComponent<PlayerCombat>().isPlayerDead;
         //Move enemy towards player
         distance = Vector2.Distance(transform.position, Player.transform.position);
-
-        if ((distance < distanceBetween) && (distance > 1))
+        Vector2 direction = (Player.transform.position - transform.position).normalized;
+        if (isHurting == true)
         {
-            isMoving = true; 
-            transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, speed * Time.deltaTime);
-            anim.SetBool("Move", true);
+            rb.linearVelocity = Vector2.zero;
+        }
+        else if (isAttacking == true)
+        {
+            rb.linearVelocity = Vector2.zero;
         }
         else
         {
-            anim.SetBool("Move", false);
+            if ((distance < distanceBetween) && (distance > 1))
+            {
+                isMoving = true;
+                rb.linearVelocity = direction;
+                anim.SetBool("Move", true);
+            }
+            else
+            {
+                anim.SetBool("Move", false);
+                isMoving = false;
+                rb.linearVelocity = Vector2.zero;
+            }
         }
 
         if (Time.time >= nextEnemyAttackTime)
@@ -101,11 +130,23 @@ public class EnemyAI : MonoBehaviour
         {
             if (isEnemyDead == false)
             {
-                if (audioSource.clip != combatClip)
+                if (isPlayerDead == false)
                 {
-                    audioSource.Stop();
-                    audioSource.clip = combatClip;
-                    audioSource.Play();
+                    if (audioSource.clip != combatClip)
+                    {
+                        audioSource.Stop();
+                        audioSource.clip = combatClip;
+                        audioSource.Play();
+                    }
+                }
+                else
+                {
+                    if (audioSource.clip != gameOverClip)
+                    {
+                        audioSource.Stop();
+                        audioSource.clip = gameOverClip;
+                        audioSource.Play();
+                    }   
                 }
             }
         }
@@ -114,7 +155,9 @@ public class EnemyAI : MonoBehaviour
      public void EnemyAttack()
      {
         //Enemy Attack Animation
-        anim.Play("EnemyAttack");
+        isAttacking = true;
+        anim.SetBool("Hurt", false);
+        anim.SetBool("Attack", true);
 
         //Detect if player is in range
         Collider2D[] hitPlayer = Physics2D.OverlapCircleAll(enemyAttackPoint.position, enemyAttackRange, playerLayer);
@@ -124,6 +167,12 @@ public class EnemyAI : MonoBehaviour
         {
             player.GetComponent<PlayerCombat>().PlayerTakeDamage(enemyAttackDamage);
         }
-     }
+    }
+
+    public void FinishAttack()
+    {
+        isAttacking = false;
+        anim.SetBool("Attack", false);
+    }
 }
 
