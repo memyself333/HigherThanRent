@@ -46,6 +46,9 @@ public class PlayerCombat : MonoBehaviour
     public AudioClip gameOverClip;
 
     public bool isLobbyDoorBroken = false;
+    public bool isCommonRoomDoorBroken = false;
+
+    public Rigidbody2D rb;
 
 
 
@@ -97,6 +100,7 @@ public class PlayerCombat : MonoBehaviour
                 }
             }
         }
+
     }
     void FoxAttack()
     {
@@ -117,7 +121,7 @@ public class PlayerCombat : MonoBehaviour
         {
             playerAnim.Play("FoxAttackLeft");
         }
-        audioSource.PlayOneShot(combatSounds[0]);
+        audioSource.PlayOneShot(combatSounds[2]);
         //Detect Enemies in range
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(foxAttackPoint.position, foxAttackRange, enemyLayers);
 
@@ -145,7 +149,7 @@ public class PlayerCombat : MonoBehaviour
             enemy.GetComponent<EnemyAI>().EnemyTakeDamage(axeAttackDamage);
         }
 
-        if (SceneManager.GetActiveScene().name == "Lobby")
+        if (SceneManager.GetActiveScene().name == "Lobby" || SceneManager.GetActiveScene().name == "CommonRoom")
         {
             Collider2D[] breakDoors = Physics2D.OverlapCircleAll(foxAttackPoint.position, foxAttackRange, doorLayers);
             //Damage Enemies
@@ -200,11 +204,17 @@ public class PlayerCombat : MonoBehaviour
         isPlayerDead = true;
         playerAnim.updateMode = AnimatorUpdateMode.UnscaledTime; // Ensures the death animation plays even when time is stopped
         playerAnim.Play("PlayerDeath");
-        playerAnim.updateMode = AnimatorUpdateMode.Normal; // Resets the update mode to normal after the death animation has played
     }
 
     public void AquireAxe()
     {
+        rb.linearVelocity = Vector2.zero;
         playerAnim.Play("AquireAxe");
+        audioSource.PlayOneShot(combatSounds[3]);
+    }
+
+    public void FinishDeath()
+    {
+        playerAnim.updateMode = AnimatorUpdateMode.Normal;
     }
 }
