@@ -2671,7 +2671,10 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 2
   anim: {fileID: 1761934996}
+  dead: {fileID: 0}
+  sprite: {fileID: 0}
   hitRange: 0
+  combatAudioReady: 0
   distance: 0
   distanceBetween: 4
   EnemyMaxHealth: 3
@@ -2689,6 +2692,8 @@ MonoBehaviour:
   isEnemyDead: 0
   isPlayerDead: 0
   chestScript: {fileID: 0}
+  cCommonRoom: {fileID: 0}
+  door: {fileID: 0}
 --- !u!61 &1761934992
 BoxCollider2D:
   m_ObjectHideFlags: 0

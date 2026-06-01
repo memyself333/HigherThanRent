@@ -1033,7 +1033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: persistentObjects.Array.size
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: 'persistentObjects.Array.data[0]'
@@ -1099,6 +1099,10 @@ PrefabInstance:
       propertyPath: 'persistentObjects.Array.data[15]'
       value: 
       objectReference: {fileID: 805657912}
+    - target: {fileID: 3790394399782634527, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
+      propertyPath: 'persistentObjects.Array.data[16]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3894600863851649858, guid: cd56cef346a82a04a833fba8956a9dea, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1781
@@ -2478,6 +2482,14 @@ PrefabInstance:
       propertyPath: cHallway
       value: 
       objectReference: {fileID: 1652631219}
+    - target: {fileID: 8771634071650068090, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: fakeDoors
+      value: 
+      objectReference: {fileID: 1539245181}
+    - target: {fileID: 8771634071650068090, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: fakeGround
+      value: 
+      objectReference: {fileID: 623442898}
     - target: {fileID: 8771634071650068090, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: audioSource
       value: 
@@ -4503,6 +4515,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MiniMap
   minimap: {fileID: 849565912}
   anim: {fileID: 849565911}
+  player: {fileID: 614174416}
+  pauseMenu: {fileID: 1920886110}
+  isPlayerDead: 0
+  paused: 0
 --- !u!95 &849565911
 Animator:
   serializedVersion: 7
@@ -4717,6 +4733,8 @@ MonoBehaviour:
   isEnemyDead: 0
   isPlayerDead: 0
   chestScript: {fileID: 0}
+  cCommonRoom: {fileID: 0}
+  door: {fileID: 0}
 --- !u!61 &967310836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12358,7 +12376,7 @@ GameObject:
   - component: {fileID: 1889028886}
   m_Layer: 13
   m_Name: DoorPlanks
-  m_TagString: Untagged
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12993,6 +13011,8 @@ MonoBehaviour:
   isEnemyDead: 0
   isPlayerDead: 0
   chestScript: {fileID: 1224790524}
+  cCommonRoom: {fileID: 360804859}
+  door: {fileID: 1889028885}
 --- !u!61 &1947332278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13603,6 +13623,8 @@ MonoBehaviour:
   isEnemyDead: 0
   isPlayerDead: 0
   chestScript: {fileID: 0}
+  cCommonRoom: {fileID: 0}
+  door: {fileID: 0}
 --- !u!61 &2072714601
 BoxCollider2D:
   m_ObjectHideFlags: 0

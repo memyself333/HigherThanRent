@@ -83,5 +83,10 @@ public class Chest : MonoBehaviour
             chest.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
             chestAnim.SetBool("Open", true);
         }
+            else
+            {
+                chest.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+                chestAnim.SetBool("Open", false);
+        }
     }
 }

@@ -20,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     public bool isHallucinated = false;
     public GameObject cHallway;
     public GameObject fake;
+    public Tilemap fakeGround;
+    public Tilemap fakeDoors;
 
     public void Load()
     {
@@ -27,6 +29,13 @@ public class PlayerMovement : MonoBehaviour
         {
             cHallway.SetActive(false);
             fake.SetActive(false);
+        }
+        else
+        {   
+            cHallway.SetActive(true);
+            fake.SetActive(true);
+            fakeGround.color = new Color(1f, 1f, 1f, 1f);
+            fakeDoors.color = new Color(1f, 1f, 1f, 1f);
         }
     }
 

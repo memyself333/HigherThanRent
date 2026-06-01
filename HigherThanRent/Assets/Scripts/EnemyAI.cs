@@ -43,6 +43,8 @@ public class EnemyAI : MonoBehaviour
     public bool isEnemyDead = false;
     public bool isPlayerDead = false;
     public Chest chestScript;
+    public GameObject cCommonRoom;
+    public GameObject door;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -174,9 +176,18 @@ public class EnemyAI : MonoBehaviour
     {
        if (isEnemyDead)
         { 
+            cCommonRoom.SetActive(false);
+            door.SetActive(false);
             sprite.sprite = dead;
             GetComponent<Collider2D>().enabled = false;
             this.enabled = false;
+        }
+       else       
+        {
+            cCommonRoom.SetActive(true);
+            door.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+            GetComponent<Collider2D>().enabled = true;
+            this.enabled = true;
         }
     }
     
