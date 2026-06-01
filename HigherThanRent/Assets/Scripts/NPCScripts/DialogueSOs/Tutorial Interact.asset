@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
   lines:
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: 
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
     text: Hey, not so close to me! Use that on your enemies!
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
     text: And lastly, the fact that you're talking to me tells me you might have
