@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Experimental.Animations;
@@ -15,8 +16,19 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public int direction;
     public PlayerCombat playerCombat;
+    public TMP_Text textBoxtext;
+    public bool isHallucinated = false;
+    public GameObject cHallway;
+    public GameObject fake;
 
-
+    public void Load()
+    {
+        if (isHallucinated)
+        {
+            cHallway.SetActive(false);
+            fake.SetActive(false);
+        }
+    }
 
 
     void FixedUpdate()
@@ -104,5 +116,35 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = Vector2.zero; // Stop the player immediately
         anim.Play("Idle"); // Transition to idle animation
         this.enabled = false;
+    }
+
+    public void HallwayText1 ()
+    {
+        textBoxtext.text = "Woooooooooooooooooooooooooah";
+    }
+
+    public void HallwayText2 ()
+    {
+        textBoxtext.text = "Where am I?";
+    }
+
+    public void DoorLockedText()
+    {
+        textBoxtext.text = "The door is locked";
+    }
+
+    public void DoorBarricaded()
+    {
+        textBoxtext.text = "The door seems to be barricaded";
+    }
+
+    public void ClearText()
+    {
+        textBoxtext.text = "";
+    }
+
+    public void IsHallucinated()
+    {
+        isHallucinated = true;
     }
 }

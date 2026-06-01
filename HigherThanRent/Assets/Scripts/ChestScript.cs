@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Playables;
 
@@ -16,6 +17,9 @@ public class Chest : MonoBehaviour
     public bool enemyIsDead = false;
     public ParticleSystem chestExplosion;
     public PlayableDirector chestTimeline;
+    public AudioSource audioSource;
+    public AudioClip chestOpenSound;
+    public Sprite chestOpen;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +29,7 @@ public class Chest : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         playerCombat = player.GetComponent<PlayerCombat>();
         chest.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+
     }
 
     // Update is called once per frame
@@ -40,6 +45,7 @@ public class Chest : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         chestAnim.Play("ChestOpen");
+                        audioSource.PlayOneShot(chestOpenSound);
                         axeAquired = true;
 
                     }
@@ -70,4 +76,12 @@ public class Chest : MonoBehaviour
     {
         chestTimeline.Play();
     }   
+    public void Load()
+    {
+        if (isOpen)
+        {
+            chest.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 1f);
+            chestAnim.SetBool("Open", true);
+        }
+    }
 }
