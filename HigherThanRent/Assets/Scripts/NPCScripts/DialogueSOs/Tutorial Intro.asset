@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d29196126f9adcd4b86e181f933918be, type: 3}
+  m_Name: Tutorial Intro
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  lines:
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: Ugh I'm so glad you got off me- Wait, Fox, you know those things giving
+      you trouble?
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: I heard there's a way to deal with them.
+  - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
+    text: What? Am I hearing things? Oh, my bills..?
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: Weird name for your enemies, but sure!
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: Listen, the Janitor has been worried about a leak in the server room. Sounds
+      bad. I bet you'll find your problems there.
+  - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
+    text: The what room?
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: Oh you are OUT of it, huh? I can sme- I can tell.
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: You can barely stand! At this rate I'm going to have to teach you how to
+      move.
+  - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
+    text: On that, press the W A S D keys to walk around.
+  - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
+    text: Huh- Keys? What are you talking about?
