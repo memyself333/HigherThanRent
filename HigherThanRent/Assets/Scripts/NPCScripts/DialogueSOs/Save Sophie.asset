@@ -21,8 +21,9 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
     text: Yeah! You know, for like if you die?
   - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
-    text: huh
+    text: ...Huh
   - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
     text: D-Die?
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
     text: Good luck!
+  nextconvo: []
