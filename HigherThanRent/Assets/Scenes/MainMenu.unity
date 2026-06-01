@@ -2343,6 +2343,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1947332275}
     - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: aspect
+      value: 
+      objectReference: {fileID: 1482044063}
+    - target: {fileID: 4681707575092862759, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: combatClip
       value: 
       objectReference: {fileID: 8300000, guid: 2e7caabae70948d4496727dc11310c60, type: 3}
@@ -2478,6 +2482,14 @@ PrefabInstance:
       propertyPath: fake
       value: 
       objectReference: {fileID: 734698174}
+    - target: {fileID: 8771634071650068090, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 260268660}
+    - target: {fileID: 8771634071650068090, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
+      propertyPath: type
+      value: 
+      objectReference: {fileID: 260268663}
     - target: {fileID: 8771634071650068090, guid: a6d529051d3c83e4989b6978532dc66c, type: 3}
       propertyPath: cHallway
       value: 
@@ -4517,8 +4529,10 @@ MonoBehaviour:
   anim: {fileID: 849565911}
   player: {fileID: 614174416}
   pauseMenu: {fileID: 1920886110}
+  dialogueManager: {fileID: 0}
   isPlayerDead: 0
   paused: 0
+  dialogueActive: 0
 --- !u!95 &849565911
 Animator:
   serializedVersion: 7
@@ -6358,7 +6372,7 @@ Animator:
   m_GameObject: {fileID: 1482044061}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 506fe5bf3f91b7545a0397fd97fc263b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

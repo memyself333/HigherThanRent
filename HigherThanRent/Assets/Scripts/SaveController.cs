@@ -12,37 +12,60 @@ public class SaveController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip ambienceClip;
 
-
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
+        // keep this for compatibility but ensure SaveLocation is set in Awake too
+        if (string.IsNullOrEmpty(saveLocation))
+            saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
     }
 
     private void Awake()
     {
+        // ensure path is initialized before any potential SaveGame calls from listeners wired in Awake
+        saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
+
         if (SceneManager.GetActiveScene().name == "FoxApartment" || SceneManager.GetActiveScene().name == "Lobby")
         {
-            saveButton = GameObject.FindGameObjectWithTag("SaveButton").GetComponent<Button>();
-            saveButton.onClick.AddListener(() => {
-                GameObject.FindGameObjectWithTag("SaveLoader").GetComponent<SaveController>().SaveGame();
-            });
-
+            var saveObj = GameObject.FindGameObjectWithTag("SaveButton");
+            if (saveObj != null)
+            {
+                saveButton = saveObj.GetComponent<Button>();
+                if (saveButton != null)
+                {
+                    saveButton.onClick.AddListener(() => {
+                        var loader = GameObject.FindGameObjectWithTag("SaveLoader");
+                        if (loader != null)
+                            loader.GetComponent<SaveController>().SaveGame();
+                    });
+                }
+            }
         }
 
         if (SceneManager.GetActiveScene().name == "MainMenu")
         {
-            loadButton = GameObject.FindGameObjectWithTag("LoadButton").GetComponent<Button>();
-            loadButton.onClick.AddListener(() => {
-                GameObject.FindGameObjectWithTag("SaveLoader").GetComponent<SaveController>().LoadGame();
-            });
+            var loadObj = GameObject.FindGameObjectWithTag("LoadButton");
+            if (loadObj != null)
+            {
+                loadButton = loadObj.GetComponent<Button>();
+                if (loadButton != null)
+                {
+                    loadButton.onClick.AddListener(() => {
+                        var loader = GameObject.FindGameObjectWithTag("SaveLoader");
+                        if (loader != null)
+                            loader.GetComponent<SaveController>().LoadGame();
+                    });
+                }
+            }
         }
-
     }
 
     public void SaveGame()
     {
+        // defensive: ensure saveLocation is valid
+        if (string.IsNullOrEmpty(saveLocation))
+            saveLocation = Path.Combine(Application.persistentDataPath, "saveData.json");
+
         SaveData saveData = new SaveData
         {
             playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position,
@@ -55,8 +78,17 @@ public class SaveController : MonoBehaviour
             chestOpen = GameObject.FindGameObjectWithTag("Chest").GetComponent<Chest>().isOpen,
             hallucinated = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().isHallucinated,
         };
-        File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData));
-        Debug.Log("Game saved");
+        Debug.Log("Game trying to save");
+
+        try
+        {
+            File.WriteAllText(saveLocation, JsonUtility.ToJson(saveData));
+            Debug.Log("Game saved to: " + saveLocation);
+        }
+        catch (System.Exception ex)
+        {
+            Debug.LogError("Failed to write save file: " + ex.Message);
+        }
     }
 
     public void LoadGame()
@@ -79,8 +111,6 @@ public class SaveController : MonoBehaviour
             GameObject.FindGameObjectWithTag("Enemies").GetComponent<EnemyAI>().Load();
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().Load();
             GameObject.FindGameObjectWithTag("Chest").GetComponent<Chest>().Load();
-
-
         }
         else
         {

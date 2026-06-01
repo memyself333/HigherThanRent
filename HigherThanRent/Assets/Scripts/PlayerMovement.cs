@@ -4,6 +4,7 @@ using UnityEngine.Audio;
 using UnityEngine.Experimental.Animations;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
+using UnityEngine.Timeline;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject fake;
     public Tilemap fakeGround;
     public Tilemap fakeDoors;
+    public GameObject text;
 
     public void Load()
     {
@@ -144,8 +146,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void DoorBarricaded()
     {
-        textBoxtext.text = "The door seems to be barricaded";
+        textBoxtext.text = "Maybe I can use this to break the door";
     }
+
 
     public void ClearText()
     {
@@ -155,5 +158,10 @@ public class PlayerMovement : MonoBehaviour
     public void IsHallucinated()
     {
         isHallucinated = true;
+    }
+
+    public void TypePlease()
+    {
+        text.GetComponent<typewriterUI>().Type();
     }
 }

@@ -49,7 +49,7 @@ public class PlayerCombat : MonoBehaviour
     public bool isCommonRoomDoorBroken = false;
 
     public Rigidbody2D rb;
-
+    public Animator aspect;
 
 
 
@@ -210,8 +210,10 @@ public class PlayerCombat : MonoBehaviour
     {
         rb.linearVelocity = Vector2.zero;
         playerAnim.Play("AquireAxe");
+        aspect.Play("Open");
         audioSource.PlayOneShot(combatSounds[3]);
     }
+
 
     public void FinishDeath()
     {

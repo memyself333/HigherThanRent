@@ -43,9 +43,9 @@ Material:
     m_Floats:
     - _EnableExternalAlpha: 0
     - _ZWrite: 0
-    - _amplitude: 0.011965407
+    - _amplitude: 0
     - _frequency: 1
-    - _shift: 2.3930814
+    - _shift: 0
     m_Colors:
     - _BaseColor: {r: 0.2924528, g: 0.0041384757, b: 0.0041384757, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
