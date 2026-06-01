@@ -9,6 +9,8 @@ public class EnemyAI : MonoBehaviour
     public float speed;
 
     public Animator anim;
+    public Sprite dead;
+    public SpriteRenderer sprite;
     bool isMoving = false;
     bool isHurting = false;
     bool isAttacking = false;
@@ -173,6 +175,16 @@ public class EnemyAI : MonoBehaviour
     {
         isAttacking = false;
         anim.SetBool("Attack", false);
+    }
+
+    public void Load()
+    {
+       if (isEnemyDead)
+        { 
+            sprite.sprite = dead;
+            GetComponent<Collider2D>().enabled = false;
+            this.enabled = false;
+        }
     }
 }
 
