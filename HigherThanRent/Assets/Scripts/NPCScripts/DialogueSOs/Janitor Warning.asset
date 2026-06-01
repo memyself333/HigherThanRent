@@ -34,3 +34,6 @@ MonoBehaviour:
     text: Who knooooooows?????
   - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
     text: Lemme go beat that boss.
+  - speaker: {fileID: 11400000, guid: 37fb8352eeab2924cb1e1f086d59a641, type: 2}
+    text: I don't get paid enough to stop you.
+  nextconvo: []
