@@ -18,3 +18,5 @@ MonoBehaviour:
       point.
   - speaker: {fileID: 11400000, guid: 22d59affd6ae02b4ea93ced5087599b0, type: 2}
     text: Now, to attack, press the SPACEBAR key.
+  nextconvo:
+  - nextDialogue: {fileID: 11400000, guid: 332ad020e6e294c48adfa3a0906da2a0, type: 2}

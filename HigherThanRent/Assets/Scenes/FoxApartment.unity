@@ -3420,6 +3420,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -137
       objectReference: {fileID: 0}
+    - target: {fileID: 8349849257334522265, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bb905662809509a49a8a12b3bd1a79e3, type: 3}
     - target: {fileID: 8548179699472974216, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas

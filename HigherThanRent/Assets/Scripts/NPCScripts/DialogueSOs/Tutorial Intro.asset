@@ -36,3 +36,5 @@ MonoBehaviour:
     text: On that, press the W A S D keys to walk around.
   - speaker: {fileID: 11400000, guid: 10d6c4919aaba13499839fbcfdd1c2c6, type: 2}
     text: Huh- Keys? What are you talking about?
+  nextconvo:
+  - nextDialogue: {fileID: 11400000, guid: 9d8b1df739462ca42a947aa9dbbbeeca, type: 2}

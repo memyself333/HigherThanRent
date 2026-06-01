@@ -27,6 +27,8 @@ public class DialogueManager : MonoBehaviour
     private DialogueSO currentDialogue; // Keeping track of what conversation/dialogue we're in.
     private int dialogueIndex; // Keeps track of what line of the dialogue we're in.
 
+    public bool isTutorialActive; // Checking if the tutorial is completed
+
     private void Awake()
     {
         if(Instance == null)
@@ -58,9 +60,60 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            NextDialogue();
+        }
+    }
+
+    private void NextDialogue()
+    {
+        if(currentDialogue.nextconvo.Length > 0) // Checking if there are followup conversations
+        {
+            if(currentDialogue.name == "Tutorial Intro")
+            {
+                isTutorialActive = true; 
+                EndDialogue();
+
+                var next = currentDialogue.nextconvo[0];
+                Debug.Log("Checked that the current dialogue is Tutorial Intro");
+
+                   StartDialogue(next.nextDialogue); 
+ 
+            }
+            else if(currentDialogue.name == "Tutorial Attack")
+            {
+                EndDialogue();
+
+                var next = currentDialogue.nextconvo[0];
+                Debug.Log("Checked that the current dialogue is Tutorial Attack");
+
+
+                   StartDialogue(next.nextDialogue);
+
+            }
+            else if(currentDialogue.name == "Tutorial Interact")
+            {   
+                isTutorialActive = false;
+                EndDialogue();
+
+            }
+        }
+        else
+        {
             EndDialogue();
         }
     }
+
+//    private void TutorialActionComplete(DialogueSO dialogueSO) // if they do the step of the tutorial necessary
+//    {
+//        if(dialogueSO == null)
+//        {
+//            EndDialogue();
+//        }
+//        else
+//        {
+//            StartDialogue(dialogueSO);
+//        }
+//    }
 
     private void ShowDialogue() // Updating everything on the dialogue canvas
     {
