@@ -96,9 +96,19 @@ public class DialogueManager : MonoBehaviour
                 EndDialogue();
 
             }
+            else if(currentDialogue.name == "Save Sophie")
+            {   
+                Debug.Log("Save Sophie found in length > 0");
+                EndDialogue();
+
+            }
         }
-        else
+        else if (currentDialogue.nextconvo.Length == 0)
         {
+            if(currentDialogue.name == "Save Sophie")
+            {
+                Debug.Log("Save Sophie found in Length == 0");
+            }
             EndDialogue();
         }
     }
