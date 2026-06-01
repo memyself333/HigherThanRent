@@ -100,6 +100,7 @@ public class PlayerCombat : MonoBehaviour
                 }
             }
         }
+
     }
     void FoxAttack()
     {

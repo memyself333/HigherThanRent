@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -16,6 +17,7 @@ public class EnemyAI : MonoBehaviour
     bool isAttacking = false;
 
     public int hitRange;
+    public bool combatAudioReady = false;
 
     public float distance;
     public float distanceBetween;
@@ -132,16 +134,7 @@ public class EnemyAI : MonoBehaviour
         {
             if (isEnemyDead == false)
             {
-                if (isPlayerDead == false)
-                {
-                    if (audioSource.clip != combatClip)
-                    {
-                        audioSource.Stop();
-                        audioSource.clip = combatClip;
-                        audioSource.Play();
-                    }
-                }
-                else
+                if (isPlayerDead == true)
                 {
                     if (audioSource.clip != gameOverClip)
                     {
@@ -186,5 +179,19 @@ public class EnemyAI : MonoBehaviour
             this.enabled = false;
         }
     }
+    
+    public void StopAudio()
+    {         audioSource.Stop();
+    }
+    public void CombatAudioReady()
+    {
+        if (audioSource.clip != combatClip)
+        {
+            audioSource.Stop();
+            audioSource.clip = combatClip;
+            audioSource.Play();
+        }
+    }
+
 }
 

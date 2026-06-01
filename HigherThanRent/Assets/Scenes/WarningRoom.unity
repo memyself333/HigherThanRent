@@ -1636,7 +1636,10 @@ MonoBehaviour:
   rb: {fileID: 0}
   speed: 2
   anim: {fileID: 755358791}
+  dead: {fileID: 0}
+  sprite: {fileID: 0}
   hitRange: 0
+  combatAudioReady: 0
   distance: 0
   distanceBetween: 4
   EnemyMaxHealth: 3
@@ -7981,7 +7984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.x
-      value: 1.9862728
+      value: 1.56
       objectReference: {fileID: 0}
     - target: {fileID: 8837711437306155186, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: m_Size.y
@@ -8001,7 +8004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: newPlayerPosition.x
-      value: 8
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 9097818985927252656, guid: 5b1261c07a54141479c3271a8e0ee334, type: 3}
       propertyPath: newPlayerPosition.y
