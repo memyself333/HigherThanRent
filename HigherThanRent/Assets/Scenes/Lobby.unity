@@ -391,13 +391,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4945407091144817737, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 700
+    - target: {fileID: 5685911122199848611, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_fontSize
+      value: 100
       objectReference: {fileID: 0}
-    - target: {fileID: 4945407091144817737, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -140
+    - target: {fileID: 5685911122199848611, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5763160936788038155, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: dialogueAnim
@@ -407,6 +407,30 @@ PrefabInstance:
       propertyPath: dialogueTextBox
       value: 
       objectReference: {fileID: 1932996493}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_text
+      value: New Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_margin.w
+      value: 2.521744
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_margin.x
+      value: 0.340603
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_margin.y
+      value: -3.6289349
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_margin.z
+      value: 1.9659435
+      objectReference: {fileID: 0}
     - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_fontAsset
       value: 
@@ -422,6 +446,10 @@ PrefabInstance:
     - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_fontColor.r
       value: 0.3647059
+      objectReference: {fileID: 0}
+    - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7758591317568304314, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_sharedMaterial
@@ -440,8 +468,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8000120394711223357, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1520
+      objectReference: {fileID: 0}
+    - target: {fileID: 8000120394711223357, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 788
+      value: -172
       objectReference: {fileID: 0}
     - target: {fileID: 8000120394711223357, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -454,6 +486,14 @@ PrefabInstance:
     - target: {fileID: 8548179699472974216, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_Name
       value: DialogueCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095804622989245666, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9095804622989245666, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -770,6 +810,8 @@ MonoBehaviour:
   isEnemyDead: 0
   isPlayerDead: 0
   chestScript: {fileID: 0}
+  cCommonRoom: {fileID: 0}
+  door: {fileID: 0}
 --- !u!212 &286769537
 SpriteRenderer:
   serializedVersion: 2
