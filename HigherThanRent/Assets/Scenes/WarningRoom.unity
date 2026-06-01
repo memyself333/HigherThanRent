@@ -225,11 +225,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5685911122199848611, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_fontSize
-      value: 150
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 5685911122199848611, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: m_fontSizeBase
-      value: 150
+      value: 130
       objectReference: {fileID: 0}
     - target: {fileID: 5763160936788038155, guid: 8806b323b583385428cf5b89c30384ad, type: 3}
       propertyPath: dialogueAnim
@@ -1664,6 +1664,8 @@ MonoBehaviour:
   isEnemyDead: 0
   isPlayerDead: 0
   chestScript: {fileID: 0}
+  cCommonRoom: {fileID: 0}
+  door: {fileID: 0}
 --- !u!61 &755358793
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -51,6 +51,12 @@ public class ConfinerFinder : MonoBehaviour
             audioSource.clip = ambienceClip;
             audioSource.Play();
         }
+        if (SceneManager.GetActiveScene().name == "BossRoom")
+        {
+            audioSource.Stop();
+            audioSource.clip = combatClip;
+            audioSource.Play();
+        }
 
 
     }
